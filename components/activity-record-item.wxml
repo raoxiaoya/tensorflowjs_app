@@ -1,0 +1,17 @@
+<view class="activity-record-item">
+    <view class="title">{{a}}</view>
+    <view class="content">
+        <image mode="aspectFill" src="{{b}}"></image>
+        <view class="fields">
+            <view class="nid">{{c}}</view>
+            <view class="signer" wx:if="{{d}}">{{e}} {{f}}</view>
+            <view>{{g}}</view>
+            <view>{{h}}</view>
+        </view>
+        <view class="counter">
+            <view wx:if="{{i}}">{{j}}<text class="unit">个</text>
+            </view>
+            <view>{{k}}</view>
+        </view>
+    </view>
+</view>

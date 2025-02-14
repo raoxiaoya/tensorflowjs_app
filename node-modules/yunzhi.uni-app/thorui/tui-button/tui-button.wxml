@@ -1,0 +1,6 @@
+<view class="{{['tui-button__wrap','data-v-2cc3889c',D,E,F]}}" style="{{'width:'+G+';'+'height:'+H+';'+'margin:'+I}}">
+    <button appParameter="{{p}}" bindchooseavatar="{{v}}" bindcontact="{{s}}" binderror="{{t}}" bindgetphonenumber="{{r}}" bindgetuserinfo="{{q}}" bindlaunchapp="{{w}}" bindtap="{{y}}" class="{{['tui-btn','data-v-2cc3889c',a,b,c,d,e]}}" disabled="{{x}}" formType="{{n}}" loading="{{m}}" openType="{{o}}" style="{{'width:'+f+';'+'height:'+g+';'+'line-height:'+h+';'+'font-size:'+i+';'+'background:'+j+';'+'color:'+k+';'+'box-shadow:'+l}}">
+        <slot></slot>
+    </button>
+    <view class="{{['tui-button__border','data-v-2cc3889c',A,B]}}" style="{{'border-color:'+C}}" wx:if="{{z}}"></view>
+</view>

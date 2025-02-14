@@ -1,0 +1,24 @@
+<view class="place-guide">
+    <image mode="widthFix" src="{{a}}"></image>
+    <view class="slider-wrapper">
+        <block wx:if="{{b}}">
+            <view class="indicator" style="{{c}}"></view>
+            <view class="slider" style="{{e}}">
+                <iconfont bind:__l="__l" uI="2bcd4ec2-0" uP="{{d}}" wx:if="{{d}}"></iconfont>
+            </view>
+        </block>
+        <view class="indicator success" style="{{g}}" wx:else>{{f}}</view>
+    </view>
+</view>
+<view style="margin:72rpx 13vw 0 13vw">
+    <tui-button bind:__l="__l" bindclick="{{h}}" uI="2bcd4ec2-1" uP="{{i}}" uS="{{['d']}}" wx:if="{{i}}">跳过</tui-button>
+</view>
+<view class="desc">
+    <text> 1.为了保证在最好的识别效果，请仔细阅读本说明。
+ 2.请不要在强光、弱光、逆光环境下使用。
+ 3.请不要在多人同时入镜或环境杂乱下使用，画面除人像外越干净识别效果越好。
+ 4.请尽量保持人像在画面正中位置。
+ 5.手机横向检测时，请不要锁定屏幕方向。
+ 6.不要急于开始，请先固定好手机、调整好位置及视角后，听到“开始”语音后开始运动。
+ </text>
+</view>

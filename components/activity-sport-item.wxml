@@ -1,0 +1,17 @@
+<view class="activity-sport-item">
+    <view class="cover">
+        <image mode="aspectFit" src="{{a}}"></image>
+    </view>
+    <view class="content">
+        <view class="name">{{b}}</view>
+        <view class="descr">
+            <text wx:if="{{c}}"> 限时 {{d}}</text>
+            <text wx:else> 自由 </text>
+            <text wx:if="{{e}}"> 限{{f}}次/日 </text>
+        </view>
+    </view>
+    <slot name="operates" wx:if="{{$slots.operates}}"></slot>
+    <block wx:else>
+        <tui-button bind:__l="__l" bindclick="{{h}}" uI="c5924436-0" uP="{{i}}" uS="{{['d']}}" wx:if="{{i}}">{{g}}</tui-button>
+    </block>
+</view>

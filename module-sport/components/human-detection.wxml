@@ -1,0 +1,16 @@
+<view class="human-detection" style="">
+    <camera binderror="{{d}}" bindinitdone="{{c}}" class="preview" devicePosition="{{b}}" flash="off" frameSize="small" id="preview" resolution="medium" style="{{a}}"></camera>
+    <view class="body-box" style="{{f}}" wx:if="{{e}}"></view>
+    <canvas class="preview graphs" id="graphics" style="{{h}}" type="2d" wx:if="{{g}}"></canvas>
+    <view class="countdown" style="{{k}}" wx:if="{{i}}">{{j}}</view>
+    <view class="info-box" wx:if="{{l}}">
+        <view>
+            <label>采集FPS：</label>
+            <text>{{m}}</text>
+        </view>
+        <view>
+            <label>识别FPS：</label>
+            <text>{{n}}</text>
+        </view>
+    </view>
+</view>

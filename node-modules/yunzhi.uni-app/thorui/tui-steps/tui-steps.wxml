@@ -1,0 +1,19 @@
+<view class="{{['tui-steps-box','data-v-28ebe18a',k&&'tui-steps-column']}}">
+    <view catchtap="{{item.E}}" class="{{['tui-step-item','data-v-28ebe18a',j]}}" style="{{'width:'+i}}" wx:for="{{a}}" wx:key="D">
+        <view class="{{['tui-step-item-ico','data-v-28ebe18a',b]}}" style="{{'width:'+c}}">
+            <view class="tui-step-ico data-v-28ebe18a" style="{{'width:'+item.h+';'+'height:'+item.i+';'+'background-color:'+item.j+';'+'border-color:'+item.k}}" wx:if="{{item.a}}">
+                <text class="data-v-28ebe18a" style="{{'color:'+item.d}}" wx:if="{{item.b}}">{{item.c}}</text>
+                <tui-icon bind:__l="__l" class="data-v-28ebe18a" uI="{{item.f}}" uP="{{item.g}}" wx:if="{{item.e}}"></tui-icon>
+            </view>
+            <view class="tui-step-custom data-v-28ebe18a" style="{{'background-color:'+item.r}}" wx:if="{{item.l}}">
+                <tui-icon bind:__l="__l" class="data-v-28ebe18a" uI="{{item.n}}" uP="{{item.o}}" wx:if="{{item.m}}"></tui-icon>
+                <image class="tui-step-img data-v-28ebe18a" mode="widthFix" src="{{item.q}}" wx:if="{{item.p}}"></image>
+            </view>
+            <view class="{{['tui-step-line','data-v-28ebe18a',item.t,item.v]}}" style="{{'border-color:'+item.w+';'+'border-right-style:'+item.x+';'+'border-top-style:'+item.y}}" wx:if="{{item.s}}"></view>
+        </view>
+        <view class="{{['tui-step-item-main','data-v-28ebe18a',h]}}">
+            <view class="tui-step-item-title data-v-28ebe18a" style="{{'color:'+item.A+';'+'font-size:'+d+';'+'line-height:'+e+';'+'font-weight:'+f}}">{{item.z}}</view>
+            <view class="tui-step-item-content data-v-28ebe18a" style="{{'color:'+item.C+';'+'font-size:'+g}}">{{item.B}}</view>
+        </view>
+    </view>
+</view>

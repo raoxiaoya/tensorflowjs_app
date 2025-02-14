@@ -1,0 +1,19 @@
+<view class="container">
+    <human-detection bind:__l="__l" bindonHumanDetecting="{{b}}" class="r" uI="5186a837-0" uP="{{c}}" uR="humanDetection" wx:if="{{c}}"></human-detection>
+    <view class="action-panel">
+        <view class="sport">{{d}}</view>
+        <view class="counter">
+            <view class="counts">
+                <label>计数：</label>
+                <text>{{e}}</text>
+            </view>
+            <view class="times">
+                <label>计时：</label>
+                <text>{{f}}</text>
+            </view>
+        </view>
+        <view class="actions">
+            <button bindtap="{{h}}" class="button warning" hoverClass="hover">{{g}}</button>
+        </view>
+    </view>
+</view>

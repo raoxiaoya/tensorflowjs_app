@@ -1,0 +1,30 @@
+<view class="region-picker">
+    <slot name="inputer" wx:if="{{$slots.inputer}}"></slot>
+    <view bindtap="{{c}}" class="{{['inputer',b&&'placeholder']}}" hoverClass="tap-hover" wx:else>{{a}}</view>
+    <view class="messager" wx:if="{{d}}">{{e}}</view>
+    <tui-drawer bind:__l="__l" bindclose="{{n}}" uI="691ca426-0" uP="{{o}}" uS="{{['d']}}" wx:if="{{o}}">
+        <view class="header">
+            <view bindtap="{{f}}" class="cancel" hoverClass="tap-hover">取消</view>
+            <view bindtap="{{g}}" class="confirm" hoverClass="tap-hover">确认</view>
+        </view>
+        <view class="tab-wrapper">
+            <block wx:for="{{h}}" wx:for-item="lab" wx:key="g">
+                <label bindtap="{{lab.c}}" wx:if="{{lab.a}}">{{lab.b}}</label>
+                <block wx:else>
+                    <label class="active">{{lab.d}}</label>
+                    <iconfont bind:__l="__l" class="indicator" uI="{{lab.e}}" uP="{{lab.f}}" wx:if="{{lab.f}}"></iconfont>
+                </block>
+            </block>
+        </view>
+        <tui-loadmore bind:__l="__l" uI="691ca426-2,691ca426-0" uP="{{j}}" wx:if="{{i}}"></tui-loadmore>
+        <view class="region-view" wx:else>
+            <block wx:for="{{k}}" wx:for-item="n" wx:key="e">
+                <label bindtap="{{n.c}}" wx:if="{{n.a}}">{{n.b}}</label>
+                <label wx:else>
+                    <label class="selected">{{n.d}}</label>
+                </label>
+            </block>
+        </view>
+        <view class="error-tips" wx:if="{{l}}">{{m}}</view>
+    </tui-drawer>
+</view>

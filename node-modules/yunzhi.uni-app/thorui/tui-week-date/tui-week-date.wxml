@@ -1,0 +1,14 @@
+<view class="tui-week-date data-v-fd329d65" style="{{'background:'+k}}">
+    <view catchtap="{{c}}" class="tui-arrow--box data-v-fd329d65">
+        <slot name="left"></slot>
+        <view class="tui-left--arrow data-v-fd329d65" style="{{'border-right-color:'+b}}" wx:if="{{a}}"></view>
+    </view>
+    <view catchtap="{{item.e}}" class="tui-week--item data-v-fd329d65" wx:for="{{d}}" wx:key="f">
+        <view class="tui-week--label data-v-fd329d65" style="{{'font-size:'+e+';'+'color:'+f}}">{{item.a}}</view>
+        <view class="tui-week--value data-v-fd329d65" style="{{'font-size:'+g+';'+'color:'+item.c+';'+'background:'+item.d}}">{{item.b}}</view>
+    </view>
+    <view catchtap="{{j}}" class="tui-arrow--box data-v-fd329d65">
+        <slot name="right"></slot>
+        <view class="tui-right--arrow data-v-fd329d65" style="{{'border-left-color:'+i}}" wx:if="{{h}}"></view>
+    </view>
+</view>

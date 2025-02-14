@@ -1,0 +1,6 @@
+<tui-tabs bind:__l="__l" bindchange="{{a}}" uI="6182db25-0" uP="{{b}}" wx:if="{{b}}"></tui-tabs>
+<list-viewer bind:__l="__l" uI="6182db25-1" uP="{{d}}" uS="{{['d']}}" wx:if="{{d}}">
+    <navigator url="{{record.d}}" wx:for="{{c}}" wx:for-item="record" wx:key="c">
+        <activity-record-item bind:__l="__l" uI="{{record.a}}" uP="{{record.b}}" wx:if="{{record.b}}"></activity-record-item>
+    </navigator>
+</list-viewer>

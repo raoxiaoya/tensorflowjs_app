@@ -1,0 +1,54 @@
+<login-modal bind:__l="__l" uI="24e044f4-0" uP="{{a}}" wx:if="{{a}}"></login-modal>
+<view class="panel-box homework-box" wx:if="{{b}}">
+    <view class="title">
+        <view>{{c}}</view>
+        <text style="{{'color:'+e}}">{{d}}</text>
+    </view>
+    <view class="fields">
+        <tag bind:__l="__l" uI="24e044f4-1" uP="{{g}}" uS="{{['d']}}" wx:if="{{g}}">{{f}}</tag>
+        <tag bind:__l="__l" uI="24e044f4-2" uS="{{['d']}}">{{h}}</tag>
+        <tag bind:__l="__l" uI="24e044f4-3" uS="{{['d']}}">{{i}}</tag>
+    </view>
+    <view class="student">
+        <tag bind:__l="__l" uI="24e044f4-4" uS="{{['d']}}">{{j}}</tag> {{k}} 加入 </view>
+    <view class="descript">{{l}}</view>
+    <view class="details">
+        <view>
+            <label>发布老师</label>
+            <text>{{m}}</text>
+        </view>
+        <view>
+            <label>发布时间</label>
+            <text>{{n}}</text>
+        </view>
+        <view>
+            <label>作业截止</label>
+            <text>{{o}}</text>
+        </view>
+    </view>
+</view>
+<view class="panel-box sport-box" wx:if="{{p}}">
+    <view class="cycles" wx:if="{{q}}">
+        <tag bind:__l="__l" uI="24e044f4-5" uP="{{r}}" uS="{{['d']}}" wx:if="{{r}}">周一</tag>
+        <tag bind:__l="__l" uI="24e044f4-6" uP="{{s}}" uS="{{['d']}}" wx:if="{{s}}">周二</tag>
+        <tag bind:__l="__l" uI="24e044f4-7" uP="{{t}}" uS="{{['d']}}" wx:if="{{t}}">周三</tag>
+        <tag bind:__l="__l" uI="24e044f4-8" uP="{{v}}" uS="{{['d']}}" wx:if="{{v}}">周四</tag>
+        <tag bind:__l="__l" uI="24e044f4-9" uP="{{w}}" uS="{{['d']}}" wx:if="{{w}}">周五</tag>
+        <tag bind:__l="__l" uI="24e044f4-10" uP="{{x}}" uS="{{['d']}}" wx:if="{{x}}">周六</tag>
+        <tag bind:__l="__l" uI="24e044f4-11" uP="{{y}}" uS="{{['d']}}" wx:if="{{y}}">周日</tag>
+        <label>打卡</label>
+    </view>
+    <homework-sport-item bind:__l="__l" bindonDoing="{{spt.b}}" uI="{{spt.c}}" uP="{{spt.d}}" wx:for="{{z}}" wx:for-item="spt" wx:key="a"></homework-sport-item>
+</view>
+<view class="panel-box task-list">
+    <view class="header">
+        <view class="text">已提交的作业</view>
+        <tag bind:__l="__l" bindonClick="{{C}}" uI="24e044f4-13" uP="{{D}}" uS="{{['d']}}" wx:if="{{D}}">{{A}} <iconfont bind:__l="__l" uI="24e044f4-14,24e044f4-13" uP="{{B}}" wx:if="{{B}}"></iconfont>
+        </tag>
+    </view>
+    <list-viewer bind:__l="__l" uI="24e044f4-15" uP="{{F}}" uS="{{['d']}}" wx:if="{{F}}">
+        <homework-task-item bind:__l="__l" uI="{{item.b}}" uP="{{item.c}}" wx:for="{{E}}" wx:key="a"></homework-task-item>
+    </list-viewer>
+    <tui-datetime bind:__l="__l" bindconfirm="{{H}}" class="r" uI="24e044f4-17" uP="{{I}}" uR="dtmPicker" wx:if="{{I}}"></tui-datetime>
+</view>
+<view style="height:2rpx"></view>

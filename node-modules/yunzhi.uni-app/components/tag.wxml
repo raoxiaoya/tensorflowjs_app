@@ -1,0 +1,3 @@
+<view bindtap="{{d}}" class="{{['tag-wrapper',b]}}" hoverClass="{{a}}" style="{{c}}">
+    <slot></slot>
+</view>

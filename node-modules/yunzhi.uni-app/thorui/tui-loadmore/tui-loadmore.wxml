@@ -1,0 +1,4 @@
+<view class="tui-loadmore data-v-dc6bad53">
+    <view class="{{['data-v-dc6bad53',a,b]}}" style="{{'border-left-color:'+c}}"></view>
+    <view class="tui-loadmore-tips data-v-dc6bad53">{{d}}</view>
+</view>

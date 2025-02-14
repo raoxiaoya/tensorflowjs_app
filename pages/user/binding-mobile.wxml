@@ -1,0 +1,20 @@
+<view class="container">
+    <login-modal bind:__l="__l" uI="40a2e37f-0" uP="{{a}}" wx:if="{{a}}"></login-modal>
+    <tips-messager bind:__l="__l" class="r" uI="40a2e37f-1" uR="tips"></tips-messager>
+    <view class="form-panel">
+        <form-item bind:__l="__l" uI="40a2e37f-2" uP="{{f}}" uS="{{['inputer']}}" wx:if="{{c}}">
+            <input disabled bindinput="{{e}}" placeholderClass="placeholder" slot="inputer" type="text" value="{{d}}"></input>
+        </form-item>
+        <form-item bind:__l="__l" uI="40a2e37f-3" uP="{{j}}" uS="{{['inputer']}}" wx:if="{{j}}">
+            <view slot="inputer">
+                <input disabled bindinput="{{h}}" maxlength="{{11}}" placeholder="点击右侧按钮获取手机号" placeholderClass="placeholder" value="{{g}}"></input>
+                <view class="append">
+                    <button bindgetphonenumber="{{i}}" openType="getPhoneNumber" size="mini" type="warn">获取手机号</button>
+                </view>
+            </view>
+        </form-item>
+    </view>
+    <view class="actions-wrapper" wx:if="{{k}}">
+        <tui-button bind:__l="__l" bindclick="{{m}}" uI="40a2e37f-4" uP="{{n}}" uS="{{['d']}}" wx:if="{{n}}">{{l}}</tui-button>
+    </view>
+</view>

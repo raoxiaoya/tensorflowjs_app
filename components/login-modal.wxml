@@ -1,0 +1,16 @@
+<tui-modal bind:__l="__l" bindcancel="{{f}}" uI="3a2d8538-0" uP="{{g}}" uS="{{['d']}}" wx:if="{{g}}">
+    <view class="login-modal">
+        <view class="logo-wrapper">
+            <image src="{{a}}"></image>
+        </view>
+        <view class="content">
+            <view class="title"> 您还没有登录 </view>
+            <view class="descript error" wx:if="{{b}}">{{c}}</view>
+            <view class="descript" wx:else> 请先登录或注册再进行此操作 </view>
+        </view>
+        <tui-button bind:__l="__l" bindclick="{{d}}" uI="3a2d8538-1,3a2d8538-0" uP="{{e}}" uS="{{['d']}}" wx:if="{{e}}"> 立即登录 </tui-button>
+        <view class="actions">
+            <navigator class="link" url="/pages/entries/registr"> 还未注册？ </navigator>
+        </view>
+    </view>
+</tui-modal>

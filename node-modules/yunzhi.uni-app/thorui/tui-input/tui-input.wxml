@@ -1,0 +1,13 @@
+<view bindtap="{{ad}}" class="{{['tui-input__wrap','data-v-5b7f552e',Y&&'tui-border__top',Z&&'tui-border__bottom',aa&&'tui-radius__fillet',ab&&'tui-input__border-nvue']}}" style="{{ac}}">
+    <view class="tui-input__border-top data-v-5b7f552e" style="{{'border-top-color:'+b}}" wx:if="{{a}}"></view>
+    <view class="{{['tui-input__border-bottom','data-v-5b7f552e',d&&'tui-line__left']}}" style="{{'border-bottom-color:'+e}}" wx:if="{{c}}"></view>
+    <view class="{{['tui-input__border','data-v-5b7f552e',g&&'tui-radius__fillet']}}" style="{{'border-color:'+h+';'+'border-radius:'+i}}" wx:if="{{f}}"></view>
+    <view class="tui-input__required data-v-5b7f552e" style="{{'color:'+k}}" wx:if="{{j}}">*</view>
+    <view class="tui-input__label data-v-5b7f552e" style="{{'font-size:'+p+';'+'color:'+q+';'+'min-width:'+r}}" wx:if="{{l}}">
+        <text class="data-v-5b7f552e" style="{{'font-size:'+n+';'+'color:'+o}}">{{m}}</text>
+    </view>
+    <slot name="left"></slot>
+    <input adjustPosition="{{M}}" autoBlur="{{O}}" bindblur="{{Q}}" bindconfirm="{{S}}" bindfocus="{{P}}" bindinput="{{R}}" bindkeyboardheightchange="{{T}}" class="{{['tui-input__self','data-v-5b7f552e',s&&'tui-text__right',t&&'tui-input__disabled']}}" confirmHold="{{I}}" confirmType="{{H}}" cursor="{{J}}" cursorSpacing="{{E}}" disabled="{{D}}" focus="{{G}}" holdKeyboard="{{N}}" maxlength="{{F}}" name="{{y}}" password="{{A}}" placeholder="{{B}}" placeholderClass="tui-input__placeholder" placeholderStyle="{{C}}" selectionEnd="{{L}}" selectionStart="{{K}}" style="{{'font-size:'+v+';'+'color:'+w}}" type="{{x}}" value="{{z}}" wx:if="{{r0}}"></input>
+    <icon catchtap="{{X}}" class="data-v-5b7f552e" color="{{W}}" size="{{V}}" type="clear" wx:if="{{U}}"></icon>
+    <slot name="right"></slot>
+</view>

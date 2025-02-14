@@ -1,0 +1,31 @@
+<login-modal bind:__l="__l" uI="8b93cb02-0" uP="{{a}}" wx:if="{{a}}"></login-modal>
+<view class="header">
+    <view class="filter">
+        <tui-tab bind:__l="__l" bindchange="{{b}}" uI="8b93cb02-1" uP="{{c}}" wx:if="{{c}}"></tui-tab>
+    </view>
+    <view class="actions">
+        <tag bind:__l="__l" bindonClick="{{f}}" class="switch" uI="8b93cb02-2" uP="{{g}}" uS="{{['d']}}" wx:if="{{g}}">{{d}} <iconfont bind:__l="__l" uI="8b93cb02-3,8b93cb02-2" uP="{{e}}" wx:if="{{e}}"></iconfont>
+        </tag>
+        <navigator class="add" url="./accept">
+            <iconfont bind:__l="__l" uI="8b93cb02-4" uP="{{h}}" wx:if="{{h}}"></iconfont>
+        </navigator>
+    </view>
+</view>
+<list-viewer bind:__l="__l" uI="8b93cb02-5" uP="{{j}}" uS="{{['d']}}" wx:if="{{j}}">
+    <navigator class="work-item" url="{{fav.r}}" wx:for="{{i}}" wx:for-item="fav" wx:key="q">
+        <view class="title">
+            <view>{{fav.a}}</view>
+            <text style="{{'color:'+fav.c}}">{{fav.b}}</text>
+        </view>
+        <view class="fields">
+            <tag bind:__l="__l" uI="{{fav.e}}" uP="{{fav.f}}" uS="{{['d']}}" wx:if="{{fav.f}}">{{fav.d}}</tag>
+            <tag bind:__l="__l" uI="{{fav.h}}" uS="{{['d']}}">{{fav.g}}</tag>
+            <tag bind:__l="__l" uI="{{fav.j}}" uS="{{['d']}}">{{fav.i}}</tag>
+        </view>
+        <view class="teacher">
+            <tag bind:__l="__l" uI="{{fav.l}}" uS="{{['d']}}">{{fav.k}}</tag> 发布于 {{fav.m}}</view>
+        <view class="student">
+            <tag bind:__l="__l" uI="{{fav.o}}" uS="{{['d']}}">{{fav.n}}</tag> {{fav.p}} 加入 </view>
+    </navigator>
+</list-viewer>
+<tui-actionsheet bind:__l="__l" bindcancel="{{l}}" bindclick="{{k}}" uI="8b93cb02-11" uP="{{m}}" wx:if="{{m}}"></tui-actionsheet>

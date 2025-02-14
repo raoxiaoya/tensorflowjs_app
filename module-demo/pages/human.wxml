@@ -1,0 +1,30 @@
+<view class="container">
+    <human-detection bind:__l="__l" bindonHumanDetecting="{{b}}" class="r" uI="159f3bd3-0" uP="{{c}}" uR="humanDetection" wx:if="{{c}}"></human-detection>
+    <view class="actions">
+        <button bindtap="{{e}}" class="button warning" hoverClass="hover">{{d}}</button>
+    </view>
+    <view class="summary">
+        <view class="row">
+            <view>
+                <label>检查结果：</label>
+                <text style="color:green" wx:if="{{f}}">检测到人体</text>
+                <text style="color:#999" wx:else>未检测到</text>
+            </view>
+        </view>
+        <view class="row">
+            <label>置信评分：</label>
+            <text>{{g}}</text>
+        </view>
+        <view class="row">
+            <view>
+                <label>识别引擎：</label>
+                <text>ve{{h}}<text style="color:red" wx:if="{{i}}">-增强</text>
+                </text>
+            </view>
+            <view>
+                <label>帧大小：</label>
+                <text>{{j}} X {{k}}</text>
+            </view>
+        </view>
+    </view>
+</view>

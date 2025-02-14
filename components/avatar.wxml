@@ -1,0 +1,9 @@
+<view class="avatar-wrapper">
+    <view class="{{['avatar',d&&'round']}}">
+        <image mode="aspectFill" src="{{b}}" wx:if="{{a}}"></image>
+        <image src="{{c}}" wx:else></image>
+    </view>
+    <view bindtap="{{g}}" class="editing" hoverClass="tap-hover" wx:if="{{e}}">
+        <iconfont bind:__l="__l" uI="ad2bc4e4-0" uP="{{f}}" wx:if="{{f}}"></iconfont>
+    </view>
+</view>

@@ -1,0 +1,11 @@
+<login-modal bind:__l="__l" uI="1fc5a303-0" uP="{{a}}" wx:if="{{a}}"></login-modal>
+<view class="header">
+    <tui-week-date bind:__l="__l" bindclick="{{b}}" uI="1fc5a303-1"></tui-week-date>
+    <tui-searchbar bind:__l="__l" bindclear="{{d}}" bindsearch="{{c}}" uI="1fc5a303-2" uP="{{e}}" wx:if="{{e}}"></tui-searchbar>
+    <tui-tab bind:__l="__l" bindchange="{{f}}" uI="1fc5a303-3" uP="{{g}}" wx:if="{{g}}"></tui-tab>
+</view>
+<view class="panel-box task-list">
+    <list-viewer bind:__l="__l" uI="1fc5a303-4" uP="{{i}}" uS="{{['d']}}" wx:if="{{i}}">
+        <homework-task-item bind:__l="__l" uI="{{item.b}}" uP="{{item.c}}" wx:for="{{h}}" wx:key="a"></homework-task-item>
+    </list-viewer>
+</view>

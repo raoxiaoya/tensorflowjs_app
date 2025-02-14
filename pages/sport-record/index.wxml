@@ -1,0 +1,36 @@
+<view>
+    <view class="dates">
+        <view class="left">
+            <text>{{a}} {{b}}</text>
+        </view>
+        <view class="right">
+            <iconfont bind:__l="__l" bindtap="{{c}}" uI="57cb780c-0" uP="{{d}}" wx:if="{{d}}"></iconfont>
+        </view>
+    </view>
+    <view class="calendars">
+        <view bindtap="{{f}}" class="{{e}}"> 所有 </view>
+        <scroll-view scrollX class="calendar-item" scrollIntoView="{{h}}">
+            <view bindtap="{{item.e}}" class="{{item.d}}" id="{{item.c}}" wx:for="{{g}}" wx:key="f">
+                <view class="day">{{item.a}}</view>
+                <view class="week">{{item.b}}</view>
+            </view>
+        </scroll-view>
+    </view>
+    <list-viewer bind:__l="__l" class="records" uI="57cb780c-1" uP="{{j}}" uS="{{['d']}}" wx:if="{{j}}">
+        <view class="record" wx:for="{{i}}" wx:for-item="r" wx:key="h">
+            <view class="picture">
+                <image mode="aspectFit" src="{{r.a}}"></image>
+            </view>
+            <view class="info">
+                <view class="type">{{r.b}}</view>
+                <view class="date">{{r.c}}</view>
+            </view>
+            <view class="duration">
+                <view wx:if="{{r.d}}">{{r.e}}</view>
+                <view>{{r.f}}</view>
+                <view>{{r.g}}卡 </view>
+            </view>
+        </view>
+    </list-viewer>
+    <tui-calendar bind:__l="__l" bindchange="{{l}}" class="r" uI="57cb780c-2" uP="{{m}}" uR="calendar" wx:if="{{m}}"></tui-calendar>
+</view>

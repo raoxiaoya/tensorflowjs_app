@@ -1,0 +1,7 @@
+<view class="{{['tui-tabs-view','data-v-f2e3e2ae',n,o]}}" style="{{'width:'+p+';'+'height:'+q+';'+'padding:'+r+';'+'background:'+s+';'+'top:'+t+';'+'z-index:'+v}}" wx:if="{{a}}">
+    <view catchtap="{{item.l}}" class="tui-tabs-item data-v-f2e3e2ae" style="{{'width:'+d+';'+'height:'+e}}" wx:for="{{b}}" wx:key="k">
+        <view class="{{['tui-tabs-title','data-v-f2e3e2ae',item.g&&'tui-tabs-disabled']}}" style="{{'color:'+item.h+';'+'font-size:'+c+';'+'font-weight:'+item.i+';'+'transform:'+item.j}}">{{item.a}} <view class="{{['data-v-f2e3e2ae',item.d]}}" style="{{'color:'+item.e+';'+'background-color:'+item.f}}" wx:if="{{item.b}}">{{item.c}}</view>
+        </view>
+    </view>
+    <view class="tui-tabs-slider data-v-f2e3e2ae" style="{{'transform:'+g+';'+'width:'+h+';'+'height:'+i+';'+'border-radius:'+j+';'+'bottom:'+k+';'+'background:'+l+';'+'margin-bottom:'+m}}" wx:if="{{f}}"></view>
+</view>

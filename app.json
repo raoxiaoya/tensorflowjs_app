@@ -1,0 +1,110 @@
+{
+  "preloadRule": {
+    "module-demo/pages/welcome": {
+      "network": "all",
+      "packages": [
+        "module-sport"
+      ]
+    },
+    "module-demo/pages/index": {
+      "network": "all",
+      "packages": [
+        "module-sport"
+      ]
+    }
+  },
+  "componentFramework": "exparser",
+  "tabBar": {
+    "color": "#666666",
+    "selectedColor": "#FF6C44",
+    "backgroundColor": "#FFFFFF",
+    "list": [
+      {
+        "pagePath": "pages/main/home",
+        "text": "首页",
+        "iconPath": "static/images/home_128px.png",
+        "selectedIconPath": "static/images/home_128px_active.png"
+      },
+      {
+        "pagePath": "pages/activity/public/index",
+        "text": "赛事活动",
+        "iconPath": "static/images/activity_128px.png",
+        "selectedIconPath": "static/images/activity_128px_active.png"
+      },
+      {
+        "pagePath": "pages/sport/index",
+        "text": "Ai锻炼",
+        "iconPath": "static/images/sport_128px.png",
+        "selectedIconPath": "static/images/sport_128px_activity.png"
+      },
+      {
+        "pagePath": "pages/user/me",
+        "text": "我的",
+        "iconPath": "static/images/me_128px.png",
+        "selectedIconPath": "static/images/me_128px_active.png"
+      }
+    ]
+  },
+  "subPackages": [
+    {
+      "root": "module-demo/",
+      "pages": [
+        "pages/welcome",
+        "pages/index",
+        "pages/human",
+        "pages/sport",
+        "pages/sport-full-screen"
+      ]
+    },
+    {
+      "root": "module-sport/",
+      "pages": [
+        "pages/device-place-guide",
+        "pages/fitness/fitness",
+        "pages/fitness/report",
+        "pages/activity/activity",
+        "pages/homework/doing",
+        "pages/boot-plugin"
+      ]
+    }
+  ],
+  "window": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "AI乐运动",
+    "navigationBarBackgroundColor": "#FFFFFF",
+    "backgroundColor": "#FFFFFF"
+  },
+  "pages": [
+    "pages/main/home",
+    "pages/main/about",
+    "pages/user/me",
+    "pages/user/binding-mobile",
+    "pages/user/change-password",
+    "pages/entries/login",
+    "pages/entries/registr",
+    "pages/entries/reset-password",
+    "pages/user/profile",
+    "pages/sport/index",
+    "pages/sport/detail",
+    "pages/sport-record/index",
+    "pages/activity/public/index",
+    "pages/activity/public/detail",
+    "pages/activity/public/complete",
+    "pages/activity/own/build",
+    "pages/activity/own/index",
+    "pages/activity/own/ranking",
+    "pages/activity/own/record",
+    "pages/activity/record/index",
+    "pages/teaching-homework/build",
+    "pages/teaching-homework/index",
+    "pages/teaching-homework/detail",
+    "pages/teaching-homework/task",
+    "pages/activity/record/detail",
+    "pages/study-homework/homework/index",
+    "pages/study-homework/homework/accept",
+    "pages/study-homework/homework/detail",
+    "pages/study-homework/task/index",
+    "pages/study-homework/task/report",
+    "pages/study-homework/evaluate"
+  ]
+}

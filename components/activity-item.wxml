@@ -1,0 +1,21 @@
+<view class="activity-item">
+    <image mode="aspectFill" src="{{a}}"></image>
+    <view class="body">
+        <view class="title">
+            <tag bind:__l="__l" uI="c9a35728-0" uP="{{c}}" uS="{{['d']}}" wx:if="{{c}}">{{b}}</tag> {{d}}</view>
+        <view class="descs">
+            <tag bind:__l="__l" uI="c9a35728-1" uP="{{f}}" uS="{{['d']}}" wx:if="{{f}}">{{e}}</tag>
+            <tag bind:__l="__l" uI="c9a35728-2" uP="{{h}}" uS="{{['d']}}" wx:if="{{g}}"> 公开 </tag>
+            <tag bind:__l="__l" uI="c9a35728-3" uP="{{i||''}}" uS="{{['d']}}" wx:else> 独有 </tag>
+            <tag bind:__l="__l" uI="c9a35728-4" uP="{{k}}" uS="{{['d']}}" wx:if="{{k}}">{{j}}</tag>
+            <tag bind:__l="__l" uI="c9a35728-5" uP="{{m}}" uS="{{['d']}}" wx:if="{{l}}"> 团组 </tag>
+        </view>
+        <view class="fields">
+            <view>
+                <iconfont bind:__l="__l" uI="c9a35728-6" uP="{{n}}" wx:if="{{n}}"></iconfont> {{o}}天 </view>
+            <view>
+                <iconfont bind:__l="__l" uI="c9a35728-7" uP="{{p}}" wx:if="{{p}}"></iconfont> {{q}}</view>
+            <view>{{r}}</view>
+        </view>
+    </view>
+</view>

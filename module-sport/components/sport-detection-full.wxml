@@ -1,0 +1,53 @@
+<human-detection bind:__l="__l" bindonCameraChange="{{b}}" bindonHumanDetecting="{{c}}" bindtap="{{d}}" class="r" uI="30f8f6fe-0" uP="{{e}}" uR="humanDetect" wx:if="{{e}}"></human-detection>
+<view class="sport-detection-full-counter" style="{{i}}">
+    <text wx:if="{{f}}">{{g}}</text>
+    <text>{{h}}</text>
+</view>
+<view class="sport-detection-full-info">
+    <view class="row">
+        <view class="column">
+            <view class="label">状态</view>
+            <view class="descript">{{j}}</view>
+        </view>
+        <view class="column" wx:if="{{k}}">
+            <view class="label">设定目标</view>
+            <view class="descript" wx:if="{{l}}">{{m}}<text class="unit">个</text>
+            </view>
+            <view class="descript" wx:if="{{n}}">{{o}}</view>
+        </view>
+        <view class="column">
+            <view class="label">运动</view>
+            <view class="descript">{{p}}</view>
+        </view>
+        <block wx:if="{{q}}">
+            <view class="column" wx:for="{{r}}" wx:for-item="field" wx:key="c">
+                <view class="label">{{field.a}}</view>
+                <view class="descript">{{field.b}}</view>
+            </view>
+        </block>
+    </view>
+</view>
+<view bindtap="{{K}}" class="sport-detection-full-actions" wx:if="{{s}}">
+    <view class="main">
+        <view catchtap="{{x}}" class="action" hoverClass="tap-hover">
+            <iconfont bind:__l="__l" uI="30f8f6fe-1" uP="{{v}}" wx:if="{{t}}"></iconfont>
+            <iconfont bind:__l="__l" uI="30f8f6fe-2" uP="{{w||''}}" wx:else></iconfont>
+        </view>
+        <view catchtap="{{z}}" class="action" hoverClass="tap-hover">
+            <iconfont bind:__l="__l" uI="30f8f6fe-3" uP="{{y}}" wx:if="{{y}}"></iconfont>
+        </view>
+    </view>
+    <view class="minor">
+        <view catchtap="{{B}}" class="action" hoverClass="tap-hover">
+            <iconfont bind:__l="__l" uI="30f8f6fe-4" uP="{{A}}" wx:if="{{A}}"></iconfont>
+        </view>
+        <view catchtap="{{F}}" class="action" hoverClass="tap-hover">
+            <iconfont bind:__l="__l" uI="30f8f6fe-5" uP="{{D}}" wx:if="{{C}}"></iconfont>
+            <iconfont bind:__l="__l" uI="30f8f6fe-6" uP="{{E||''}}" wx:else></iconfont>
+        </view>
+        <view catchtap="{{J}}" class="action" hoverClass="tap-hover">
+            <iconfont bind:__l="__l" uI="30f8f6fe-7" uP="{{H}}" wx:if="{{G}}"></iconfont>
+            <iconfont bind:__l="__l" uI="30f8f6fe-8" uP="{{I||''}}" wx:else></iconfont>
+        </view>
+    </view>
+</view>

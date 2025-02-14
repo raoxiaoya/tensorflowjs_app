@@ -1,0 +1,8 @@
+<view class="pager-loading-wrapper data-v-2f5dfa42">
+    <view class="loading loading-image data-v-2f5dfa42">
+        <view class="loading-line ani1 data-v-2f5dfa42"></view>
+        <view class="loading-line ani2 data-v-2f5dfa42"></view>
+        <view class="loading-line ani3 data-v-2f5dfa42"></view>
+    </view>
+    <view class="loading-text data-v-2f5dfa42">{{a}}</view>
+</view>

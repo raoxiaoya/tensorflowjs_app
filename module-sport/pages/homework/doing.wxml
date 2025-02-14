@@ -1,0 +1,1 @@
+<sport-detection-full bind:__l="__l" bindonEnd="{{c}}" bindonSportCreated="{{a}}" bindonStart="{{b}}" uI="5166631b-0" uP="{{d}}" wx:if="{{d}}"></sport-detection-full>

@@ -1,0 +1,34 @@
+<view class="header">
+    <tui-searchbar bind:__l="__l" bindclear="{{b}}" bindsearch="{{a}}" uI="96e93986-0" uP="{{c}}" wx:if="{{c}}"></tui-searchbar>
+    <tui-tab bind:__l="__l" bindchange="{{d}}" uI="96e93986-1" uP="{{e}}" wx:if="{{e}}"></tui-tab>
+</view>
+<view class="activity-list">
+    <list-viewer bind:__l="__l" uI="96e93986-2" uP="{{g}}" uS="{{['d']}}" wx:if="{{g}}">
+        <navigator class="activity-item" url="{{aty.t}}" wx:for="{{f}}" wx:for-item="aty" wx:key="s">
+            <view class="{{['status-tag',aty.b]}}">{{aty.a}}</view>
+            <image mode="aspectFill" src="{{aty.c}}"></image>
+            <view class="footer">
+                <view class="title">{{aty.d}}</view>
+                <view class="descs">
+                    <tag bind:__l="__l" uI="{{aty.f}}" uP="{{aty.g}}" uS="{{['d']}}" wx:if="{{aty.e}}"> 公开 </tag>
+                    <tag bind:__l="__l" uI="{{aty.h}}" uP="{{aty.i||''}}" uS="{{['d']}}" wx:else> 独有 </tag>
+                    <tag bind:__l="__l" uI="{{aty.k}}" uP="{{aty.l}}" uS="{{['d']}}" wx:if="{{aty.l}}">{{aty.j}}</tag>
+                    <tag bind:__l="__l" uI="{{aty.n}}" uP="{{aty.o}}" uS="{{['d']}}" wx:if="{{aty.m}}"> 团组 </tag>
+                </view>
+                <view class="fields">
+                    <label>举办：</label>
+                    <text>{{aty.p}}</text>
+                </view>
+                <view class="fields">
+                    <label>开始时间：</label>
+                    <text>{{aty.q}}</text>
+                </view>
+                <view class="fields">
+                    <label>结束时间：</label>
+                    <text>{{aty.r}}</text>
+                </view>
+            </view>
+        </navigator>
+    </list-viewer>
+</view>
+<view style="height:2rpx"></view>

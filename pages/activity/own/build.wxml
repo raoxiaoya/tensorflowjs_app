@@ -1,0 +1,108 @@
+<login-modal bind:__l="__l" uI="93fbaf38-0" uP="{{a}}" wx:if="{{a}}"></login-modal>
+<tips-messager bind:__l="__l" class="r" uI="93fbaf38-1" uR="tips"></tips-messager>
+<view class="panel-box">
+    <view class="title"> 活动图片 </view>
+    <view bindtap="{{g}}" class="theme-image" hoverClass="tap-hover">
+        <image bindtap="{{e}}" mode="aspectFill" src="{{d}}" wx:if="{{c}}"></image>
+        <view class="icon-box" wx:else>
+            <iconfont bind:__l="__l" uI="93fbaf38-2" uP="{{f}}" wx:if="{{f}}"></iconfont>
+        </view>
+    </view>
+    <view class="tips"> *请上传活动主题图片，图片建议大小828x436或等比缩放。 </view>
+</view>
+<view class="panel-box">
+    <view class="title">基本信息</view>
+    <view class="form-panel">
+        <form-item bind:__l="__l" uI="93fbaf38-3" uP="{{j}}" uS="{{['inputer']}}" wx:if="{{j}}">
+            <input bindinput="{{i}}" maxlength="{{50}}" placeholder="请输入赛事活动标题" placeholderClass="placeholder" slot="inputer" type="text" value="{{h}}"></input>
+        </form-item>
+        <form-item bind:__l="__l" uI="93fbaf38-4" uP="{{m}}" uS="{{['inputer']}}" wx:if="{{m}}">
+            <input bindinput="{{l}}" maxlength="{{50}}" placeholder="请输入活动举办单位或举办人" placeholderClass="placeholder" slot="inputer" value="{{k}}"></input>
+        </form-item>
+        <form-item bind:__l="__l" uI="93fbaf38-5" uP="{{p}}" uS="{{['inputer']}}" wx:if="{{p}}">
+            <textarea bindinput="{{o}}" maxlength="200" placeholder="请输入活动的简单介绍" placeholderClass="placeholder" slot="inputer" value="{{n}}"></textarea>
+        </form-item>
+    </view>
+</view>
+<view class="panel-box">
+    <view class="title">活动设置</view>
+    <view class="form-panel">
+        <form-item bind:__l="__l" uI="93fbaf38-6" uP="{{w}}" uS="{{['inputer']}}" wx:if="{{w}}">
+            <radio-group bindchange="{{v}}" slot="inputer">
+                <label class="radio-item">
+                    <radio checked="{{q}}" color="{{r}}" value="{{10}}"></radio>
+                    <text>打卡活动</text>
+                </label>
+                <label class="radio-item">
+                    <radio checked="{{s}}" color="{{t}}" value="{{20}}"></radio>
+                    <text>竞赛活动</text>
+                </label>
+            </radio-group>
+        </form-item>
+        <form-item bind:__l="__l" uI="93fbaf38-7" uP="{{B}}" uS="{{['inputer']}}" wx:if="{{B}}">
+            <view slot="inputer" style="flex:1">
+                <view bindtap="{{z}}" class="inputer" hoverClass="tap-hover" wx:if="{{x}}">{{y}}</view>
+                <view bindtap="{{A}}" class="inputer placeholder" hoverClass="tap-hover" wx:else> 请选择活动开始时间，到达将自动开赛 </view>
+            </view>
+        </form-item>
+        <form-item bind:__l="__l" uI="93fbaf38-8" uP="{{G}}" uS="{{['inputer']}}" wx:if="{{G}}">
+            <view slot="inputer" style="flex:1">
+                <view bindtap="{{E}}" class="inputer" hoverClass="tap-hover" wx:if="{{C}}">{{D}}</view>
+                <view bindtap="{{F}}" class="inputer placeholder" hoverClass="tap-hover" wx:else> 请选择活动结束时间，到达将自动停赛 </view>
+            </view>
+        </form-item>
+        <form-item bind:__l="__l" uI="93fbaf38-9" uP="{{M}}" uS="{{['inputer']}}" wx:if="{{M}}">
+            <radio-group bindchange="{{L}}" slot="inputer">
+                <label class="radio-item">
+                    <radio checked="{{H}}" color="{{I}}" value="{{false}}"></radio>
+                    <text>个人赛</text>
+                </label>
+                <label class="radio-item">
+                    <radio checked="{{J}}" color="{{K}}" value="{{true}}"></radio>
+                    <text>团组赛</text>
+                </label>
+            </radio-group>
+        </form-item>
+        <form-item bind:__l="__l" uI="93fbaf38-10" uP="{{Q}}" uS="{{['inputer']}}" wx:if="{{N}}">
+            <textarea bindinput="{{O}}" maxlength="200" placeholder="请输入参赛的团（组）清单，一行一个，注意不要有空行" placeholderClass="placeholder" slot="inputer" value="{{P}}"></textarea>
+        </form-item>
+        <form-item bind:__l="__l" uI="93fbaf38-11" uP="{{U}}" uS="{{['inputer']}}" wx:if="{{U}}">
+            <checkbox-group bindchange="{{T}}" slot="inputer">
+                <label class="checkbox-item" wx:for="{{R}}" wx:for-item="field" wx:key="d">
+                    <checkbox checked="{{field.a}}" color="{{S}}" value="{{field.b}}"></checkbox>
+                    <text>{{field.c}}</text>
+                </label>
+            </checkbox-group>
+        </form-item>
+        <form-item bind:__l="__l" uI="93fbaf38-12" uP="{{X}}" uS="{{['inputer']}}" wx:if="{{X}}">
+            <input bindinput="{{W}}" maxlength="{{12}}" placeholder="请输入参赛口令，邀请或凭口令参赛" placeholderClass="placeholder" slot="inputer" type="password" value="{{V}}"></input>
+        </form-item>
+    </view>
+</view>
+<view class="panel-box sport-list">
+    <view class="title"> 运动项目设置 </view>
+    <activity-sport-item bind:__l="__l" uI="{{spt.f}}" uP="{{spt.g}}" uS="{{['operates']}}" wx:for="{{Y}}" wx:for-item="spt" wx:key="e">
+        <view class="operates" slot="operates">
+            <view bindtap="{{spt.b}}" hoverClass="tap-hover">
+                <iconfont bind:__l="__l" uI="{{spt.a}}" uP="{{Z}}" wx:if="{{Z}}"></iconfont>
+            </view>
+            <view bindtap="{{spt.d}}" hoverClass="tap-hover">
+                <iconfont bind:__l="__l" uI="{{spt.c}}" uP="{{aa}}" wx:if="{{aa}}"></iconfont>
+            </view>
+        </view>
+    </activity-sport-item>
+    <view class="actions">
+        <tui-button bind:__l="__l" bindclick="{{ac}}" uI="93fbaf38-16" uP="{{ad}}" uS="{{['d']}}" wx:if="{{ad}}">
+            <iconfont bind:__l="__l" uI="93fbaf38-17,93fbaf38-16" uP="{{ab}}" wx:if="{{ab}}"></iconfont>
+            <text>添加运动项目</text>
+        </tui-button>
+    </view>
+</view>
+<view class="actions-box">
+    <tui-button bind:__l="__l" bindclick="{{af}}" uI="93fbaf38-18" uP="{{ag}}" uS="{{['d']}}" wx:if="{{ag}}">{{ae}}</tui-button>
+    <button class="contact" openType="contact"> 有疑问，立即联系客服 </button>
+</view>
+<view style="height:2rpx"></view>
+<activity-sport-modal bind:__l="__l" bindonChange="{{ah}}" bindupdateModelValue="{{ai}}" bindupdateVisibled="{{aj}}" uI="93fbaf38-19" uP="{{ak}}" wx:if="{{ak}}"></activity-sport-modal>
+<tui-datetime bind:__l="__l" bindconfirm="{{am}}" class="r" uI="93fbaf38-20" uP="{{an}}" uR="beginTime" wx:if="{{an}}"></tui-datetime>
+<tui-datetime bind:__l="__l" bindconfirm="{{ap}}" class="r" uI="93fbaf38-21" uP="{{aq}}" uR="endTime" wx:if="{{aq}}"></tui-datetime>

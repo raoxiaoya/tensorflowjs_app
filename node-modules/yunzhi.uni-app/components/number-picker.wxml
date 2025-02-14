@@ -1,0 +1,30 @@
+<view class="number-picker">
+    <slot name="inputer" wx:if="{{$slots.inputer}}"></slot>
+    <view bindtap="{{f}}" class="{{['inputer',e&&'placeholder']}}" hoverClass="tap-hover" wx:else>
+        <text wx:if="{{a}}">{{b}} {{c}}</text>
+        <text wx:else>{{d}}</text>
+    </view>
+    <tui-drawer bind:__l="__l" bindclose="{{v}}" uI="5da46278-0" uP="{{w}}" uS="{{['d']}}" wx:if="{{w}}">
+        <view class="drawer-wrapper">
+            <view class="label" wx:if="{{g}}">{{h}}</view>
+            <picker-view bindchange="{{p}}" class="picker-view" indicatorStyle="height: 42px;" value="{{o}}">
+                <picker-view-column>
+                    <view class="{{['item',num.b&&'selected']}}" wx:for="{{i}}" wx:for-item="num" wx:key="c">{{num.a}}</view>
+                </picker-view-column>
+                <picker-view-column wx:if="{{j}}">
+                    <view class="item selected">.</view>
+                </picker-view-column>
+                <picker-view-column wx:if="{{k}}">
+                    <view class="{{['item',num.b&&'selected']}}" wx:for="{{l}}" wx:for-item="num" wx:key="c">{{num.a}}</view>
+                </picker-view-column>
+                <picker-view-column wx:if="{{m}}">
+                    <view class="item selected">{{n}}</view>
+                </picker-view-column>
+            </picker-view>
+            <view class="actions">
+                <tui-button bind:__l="__l" bindclick="{{q}}" uI="5da46278-1,5da46278-0" uP="{{r}}" uS="{{['d']}}" wx:if="{{r}}"> 取消 </tui-button>
+                <tui-button bind:__l="__l" bindclick="{{s}}" uI="5da46278-2,5da46278-0" uP="{{t}}" uS="{{['d']}}" wx:if="{{t}}"> 确认 </tui-button>
+            </view>
+        </view>
+    </tui-drawer>
+</view>

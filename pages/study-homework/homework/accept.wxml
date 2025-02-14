@@ -1,0 +1,37 @@
+<login-modal bind:__l="__l" uI="1982ae2b-0" uP="{{a}}" wx:if="{{a}}"></login-modal>
+<view class="steps-box">
+    <tui-steps bind:__l="__l" uI="1982ae2b-1" uP="{{b}}" wx:if="{{b}}"></tui-steps>
+</view>
+<view class="panel-box find-box" wx:if="{{c}}">
+    <view class="title">查找体测作业</view>
+    <view class="descript">请输入作业的代码查找体测作业</view>
+    <view class="inputer">
+        <input bindinput="{{e}}" placeholder="请输入体测作业代码" placeholderClass="placeholder" value="{{d}}"></input>
+        <view bindtap="{{f}}" class="descript" hoverClass="tap-hover"> 不知道作业代码？ </view>
+    </view>
+    <tui-button bind:__l="__l" bindclick="{{g}}" uI="1982ae2b-2" uP="{{h}}" uS="{{['d']}}" wx:if="{{h}}"> 查找 </tui-button>
+</view>
+<block wx:if="{{i}}">
+    <view class="panel-box homework-box">
+        <view class="title">
+            <text>{{j}}</text>
+        </view>
+        <view class="fields">
+            <tag bind:__l="__l" uI="1982ae2b-3" uP="{{l}}" uS="{{['d']}}" wx:if="{{l}}">{{k}}</tag>
+            <tag bind:__l="__l" uI="1982ae2b-4" uS="{{['d']}}">{{m}}</tag>
+            <tag bind:__l="__l" uI="1982ae2b-5" uS="{{['d']}}">{{n}}</tag>
+        </view>
+        <view class="teacher">
+            <tag bind:__l="__l" uI="1982ae2b-6" uS="{{['d']}}">{{o}}</tag> 发布于 {{p}}</view>
+        <view class="descript">{{q}}</view>
+        <view class="students">
+            <view bindtap="{{stu.f}}" class="{{['item',stu.b&&'checked',stu.c&&'selected']}}" hoverClass="{{stu.d}}" wx:for="{{r}}" wx:for-item="stu" wx:key="e">{{stu.a}}</view>
+        </view>
+        <view class="inputer">
+            <view class="warning" wx:if="{{s}}"> *您已以 {{t}} 加入过此作业了，非多个学生身份，请勿重复加入！ </view>
+            <input bindinput="{{w}}" placeholder="请在上面选择或输入自己的名字" placeholderClass="placeholder" value="{{v}}"></input>
+        </view>
+        <tui-button bind:__l="__l" bindclick="{{x}}" uI="1982ae2b-7" uP="{{y}}" uS="{{['d']}}" wx:if="{{y}}"> 立即加入 </tui-button>
+    </view>
+    <view bindtap="{{z}}" class="back" hoverClass="tap-hover">返回查找</view>
+</block>

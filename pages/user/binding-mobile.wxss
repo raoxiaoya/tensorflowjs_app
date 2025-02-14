@@ -1,0 +1,1 @@
+page{background-color:#f6f6f6}.container{margin-top:32rpx}.inputer-wrapper>view{display:-webkit-flex;display:flex;width:100%}.inputer-wrapper>view input{flex:1}.inputer-wrapper>view .append{float:right}

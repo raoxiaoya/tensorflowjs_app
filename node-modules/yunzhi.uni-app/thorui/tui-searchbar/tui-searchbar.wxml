@@ -1,0 +1,16 @@
+<view class="tui-searchbar__box data-v-bd9c318f" style="{{'background-color:'+I+';'+'padding:'+J}}">
+    <slot></slot>
+    <view class="tui-search-bar__form data-v-bd9c318f" style="{{'height:'+z}}">
+        <view class="{{['tui-search-bar__box','data-v-bd9c318f',n&&'tui-searchbar__blur']}}" style="{{'height:'+o+';'+'border-radius:'+p+';'+'background-color:'+q}}" wx:if="{{a}}">
+            <icon class="tui-icon-search data-v-bd9c318f" size="{{b}}" type="search"></icon>
+            <input bindblur="{{g}}" bindconfirm="{{j}}" bindfocus="{{h}}" bindinput="{{i}}" class="tui-search-bar__input data-v-bd9c318f" confirmType="search" disabled="{{f}}" focus="{{e}}" placeholder="{{c}}" type="text" value="{{d}}"></input>
+            <icon catchtap="{{m}}" class="tui-icon-clear data-v-bd9c318f" size="{{l}}" type="clear" wx:if="{{k}}"></icon>
+        </view>
+        <view bindtap="{{y}}" class="tui-search-bar__label data-v-bd9c318f" style="{{'height:'+v+';'+'border-radius:'+w+';'+'background-color:'+x}}" wx:if="{{r}}">
+            <icon class="tui-icon-search data-v-bd9c318f" size="{{s}}" type="search"></icon>
+            <text class="tui-search-bar__text data-v-bd9c318f">{{t}}</text>
+        </view>
+    </view>
+    <view bindtap="{{D}}" class="tui-search-bar__cancel-btn data-v-bd9c318f" style="{{'color:'+C}}" wx:if="{{A}}">{{B}}</view>
+    <view bindtap="{{H}}" class="tui-search-bar__cancel-btn data-v-bd9c318f" style="{{'color:'+G}}" wx:if="{{E}}">{{F}}</view>
+</view>

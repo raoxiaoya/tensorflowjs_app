@@ -1,0 +1,15 @@
+<view class="homework-task-item">
+    <view class="cover">
+        <image mode="aspectFit" src="{{a}}"></image>
+    </view>
+    <view class="content">
+        <view>
+            <tag bind:__l="__l" uI="5614091a-0" uS="{{['d']}}">{{b}}</tag> {{c}}</view>
+        <view class="at-time">{{d}}</view>
+    </view>
+    <view class="score">
+        <view>{{e}}</view>
+        <view>{{f}}</view>
+    </view>
+    <view class="grade" style="{{'color:'+h}}">{{g}}</view>
+</view>

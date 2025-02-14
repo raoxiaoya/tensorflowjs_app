@@ -1,0 +1,6 @@
+<view class="{{['tui-footer-class','tui-footer','data-v-9873c464',g]}}" style="{{'background-color:'+h}}">
+    <view class="tui-footer-link data-v-9873c464" style="{{'color:'+c}}" wx:if="{{a}}">
+        <navigator appId="{{item.h}}" bindfail="{{item.l}}" bindsuccess="{{item.k}}" class="tui-link data-v-9873c464" delta="{{item.g}}" extraData="{{item.j}}" hoverClass="tui-link-hover" hoverStopPropagation="{{true}}" openType="{{item.d}}" path="{{item.i}}" style="{{'color:'+item.b+';'+'font-size:'+item.c}}" target="{{item.f}}" url="{{item.e}}" wx:for="{{b}}" wx:key="m">{{item.a}}</navigator>
+    </view>
+    <view class="tui-footer-copyright data-v-9873c464" style="{{'color:'+e+';'+'font-size:'+f}}">{{d}}</view>
+</view>

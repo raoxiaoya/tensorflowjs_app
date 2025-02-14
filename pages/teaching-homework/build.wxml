@@ -1,0 +1,82 @@
+<login-modal bind:__l="__l" uI="7d453960-0" uP="{{a}}" wx:if="{{a}}"></login-modal>
+<tips-messager bind:__l="__l" class="r" uI="7d453960-1" uR="tips"></tips-messager>
+<view class="panel-box">
+    <view class="title"> 基本信息 </view>
+    <view class="form-panel">
+        <form-item bind:__l="__l" uI="7d453960-2" uP="{{h}}" uS="{{['inputer']}}" wx:if="{{h}}">
+            <radio-group bindchange="{{g}}" slot="inputer">
+                <label class="radio-item">
+                    <radio checked="{{c}}" color="{{d}}" value="{{20}}"></radio>
+                    <text>日常作业</text>
+                </label>
+                <label class="radio-item">
+                    <radio checked="{{e}}" color="{{f}}" value="{{10}}"></radio>
+                    <text>测验作业</text>
+                </label>
+            </radio-group>
+        </form-item>
+        <form-item bind:__l="__l" uI="7d453960-3" uP="{{k}}" uS="{{['inputer']}}" wx:if="{{k}}">
+            <input bindinput="{{j}}" maxlength="{{50}}" placeholder="请输入本次作业标题" placeholderClass="placeholder" slot="inputer" type="text" value="{{i}}"></input>
+        </form-item>
+        <form-item bind:__l="__l" uI="7d453960-4" uP="{{n}}" uS="{{['inputer']}}" wx:if="{{n}}">
+            <input bindinput="{{m}}" maxlength="{{50}}" placeholder="请输入所在的学校或机构名称，便于学生查找作业" placeholderClass="placeholder" slot="inputer" value="{{l}}"></input>
+        </form-item>
+        <form-item bind:__l="__l" uI="7d453960-5" uP="{{q}}" uS="{{['inputer']}}" wx:if="{{q}}">
+            <input bindinput="{{p}}" maxlength="{{30}}" placeholder="请输入所在的班级，便于学生查找作业" placeholderClass="placeholder" slot="inputer" value="{{o}}"></input>
+        </form-item>
+        <form-item bind:__l="__l" uI="7d453960-6" uP="{{t}}" uS="{{['inputer']}}" wx:if="{{t}}">
+            <input bindinput="{{s}}" maxlength="{{20}}" placeholder="请输入您的姓名或称呼，以便学生查找作业" placeholderClass="placeholder" slot="inputer" value="{{r}}"></input>
+        </form-item>
+        <form-item bind:__l="__l" uI="7d453960-7" uP="{{x}}" uS="{{['inputer']}}" wx:if="{{x}}">
+            <textarea bindinput="{{w}}" maxlength="1000" placeholder="请输入本次作业要求的简要说明" placeholderClass="placeholder" slot="inputer" value="{{v}}"></textarea>
+        </form-item>
+    </view>
+</view>
+<view class="panel-box">
+    <view class="title">作业设置</view>
+    <view class="form-panel">
+        <form-item bind:__l="__l" uI="7d453960-8" uP="{{C}}" uS="{{['inputer']}}" wx:if="{{C}}">
+            <view slot="inputer" style="flex:1">
+                <view bindtap="{{A}}" class="inputer" hoverClass="tap-hover" wx:if="{{y}}">{{z}}</view>
+                <view bindtap="{{B}}" class="inputer placeholder" hoverClass="tap-hover" wx:else> 请选择作业截止时间 </view>
+            </view>
+        </form-item>
+        <form-item bind:__l="__l" uI="7d453960-9" uP="{{H}}" uS="{{['inputer']}}" wx:if="{{D}}">
+            <checkbox-group bindchange="{{G}}" slot="inputer">
+                <label class="checkbox-item" wx:for="{{E}}" wx:for-item="cycle" wx:key="d">
+                    <checkbox checked="{{cycle.a}}" color="{{F}}" value="{{cycle.b}}"></checkbox>
+                    <text>{{cycle.c}}</text>
+                </label>
+            </checkbox-group>
+        </form-item>
+        <form-item bind:__l="__l" uI="7d453960-10" uP="{{K}}" uS="{{['inputer']}}" wx:if="{{K}}">
+            <textarea bindinput="{{I}}" placeholder="请录入学生名单，一行一个；录入后，只有名单中的学生可以加入作业，不录入学生加入作业时填写姓名" placeholderClass="placeholder" slot="inputer" value="{{J}}"></textarea>
+        </form-item>
+    </view>
+</view>
+<view class="panel-box sport-list">
+    <view class="title"> 运动项目设置 </view>
+    <homework-sport-item bind:__l="__l" uI="{{spt.f}}" uP="{{spt.g}}" uS="{{['operates']}}" wx:for="{{L}}" wx:for-item="spt" wx:key="e">
+        <view class="operates" slot="operates">
+            <view bindtap="{{spt.b}}" hoverClass="tap-hover">
+                <iconfont bind:__l="__l" uI="{{spt.a}}" uP="{{M}}" wx:if="{{M}}"></iconfont>
+            </view>
+            <view bindtap="{{spt.d}}" hoverClass="tap-hover">
+                <iconfont bind:__l="__l" uI="{{spt.c}}" uP="{{N}}" wx:if="{{N}}"></iconfont>
+            </view>
+        </view>
+    </homework-sport-item>
+    <view class="actions">
+        <tui-button bind:__l="__l" bindclick="{{P}}" uI="7d453960-14" uP="{{Q}}" uS="{{['d']}}" wx:if="{{Q}}">
+            <iconfont bind:__l="__l" uI="7d453960-15,7d453960-14" uP="{{O}}" wx:if="{{O}}"></iconfont>
+            <text>添加运动项目</text>
+        </tui-button>
+    </view>
+</view>
+<view class="actions-box">
+    <tui-button bind:__l="__l" bindclick="{{S}}" uI="7d453960-16" uP="{{T}}" uS="{{['d']}}" wx:if="{{T}}">{{R}}</tui-button>
+    <button class="contact" openType="contact"> 有疑问，立即联系客服 </button>
+</view>
+<view style="height:2rpx"></view>
+<homework-sport-modal bind:__l="__l" bindonChange="{{U}}" bindupdateModelValue="{{V}}" bindupdateVisibled="{{W}}" uI="7d453960-17" uP="{{X}}" wx:if="{{X}}"></homework-sport-modal>
+<tui-datetime bind:__l="__l" bindconfirm="{{Z}}" class="r" uI="7d453960-18" uP="{{aa}}" uR="deadline" wx:if="{{aa}}"></tui-datetime>

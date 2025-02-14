@@ -1,0 +1,10 @@
+<scroll-view class="{{['tui-scroll__view','data-v-f2fce426',m,n,o]}}" scrollLeft="{{w}}" scrollWithAnimation="{{v}}" scrollX="{{t}}" showScrollbar="{{false}}" style="{{'height:'+p+';'+'background:'+q+';'+'top:'+r+';'+'z-index:'+s}}">
+    <view class="tui-tabs__wrap data-v-f2fce426">
+        <view class="{{['tui-tabs__list','data-v-f2fce426',k]}}" style="{{'height:'+l}}">
+            <view bindtap="{{item.f}}" class="tui-tabs__item data-v-f2fce426" style="{{'height:'+d}}" wx:for="{{a}}" wx:key="e">
+                <view class="{{['tui-item__child','data-v-f2fce426',b]}}" style="{{'color:'+item.b+';'+'font-size:'+c+';'+'font-weight:'+item.c+';'+'transform:'+item.d}}">{{item.a}}</view>
+            </view>
+            <view class="tui-tabs__line tui-transition data-v-f2fce426" style="{{'background:'+e+';'+'height:'+f+';'+'border-radius:'+g+';'+'bottom:'+h+';'+'width:'+i+';'+'transform:'+j}}"></view>
+        </view>
+    </view>
+</scroll-view>

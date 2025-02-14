@@ -1,0 +1,34 @@
+<tui-modal bind:__l="__l" uI="0d39544b-0" uP="{{y}}" uS="{{['d']}}" wx:if="{{y}}">
+    <view class="activity-sport-modal">
+        <view class="sport-activity-modal title">{{a}}</view>
+        <view class="form-panel">
+            <form-item bind:__l="__l" class="form-item" uI="0d39544b-1,0d39544b-0" uP="{{e}}" uS="{{['inputer']}}" wx:if="{{e}}">
+                <view class="inputer" slot="inputer">
+                    <sport-selector bind:__l="__l" bindonSelect="{{b}}" bindupdateModelValue="{{c}}" uI="0d39544b-2,0d39544b-1" uP="{{d}}" wx:if="{{d}}"></sport-selector>
+                </view>
+            </form-item>
+            <form-item bind:__l="__l" class="form-item" uI="0d39544b-3,0d39544b-0" uP="{{i}}" uS="{{['inputer']}}" wx:if="{{f}}">
+                <input bindinput="{{h}}" maxlength="{{3}}" placeholder="请输入每日打卡次数，0不限制" placeholderClass="placeholder" slot="inputer" type="number" value="{{g}}"></input>
+            </form-item>
+            <form-item bind:__l="__l" class="form-item" uI="0d39544b-4,0d39544b-0" uP="{{o}}" uS="{{['inputer']}}" wx:if="{{o}}">
+                <radio-group bindchange="{{n}}" slot="inputer">
+                    <label class="radio-item">
+                        <radio checked="{{j}}" color="{{k}}" value="{{false}}"></radio>
+                        <text>自由</text>
+                    </label>
+                    <label class="radio-item">
+                        <radio checked="{{l}}" color="{{m}}" value="{{true}}"></radio>
+                        <text>限时</text>
+                    </label>
+                </radio-group>
+            </form-item>
+            <form-item bind:__l="__l" class="form-item" uI="0d39544b-5,0d39544b-0" uP="{{s}}" uS="{{['inputer']}}" wx:if="{{p}}">
+                <input bindinput="{{r}}" maxlength="{{4}}" placeholder="请输入限制时长，单位：秒" placeholderClass="placeholder" slot="inputer" type="number" value="{{q}}"></input>
+            </form-item>
+        </view>
+        <view class="actions-box">
+            <tui-button bind:__l="__l" bindclick="{{t}}" uI="0d39544b-6,0d39544b-0" uP="{{v}}" uS="{{['d']}}" wx:if="{{v}}"> 确定 </tui-button>
+            <tui-button bind:__l="__l" bindclick="{{w}}" uI="0d39544b-7,0d39544b-0" uP="{{x}}" uS="{{['d']}}" wx:if="{{x}}"> 取消 </tui-button>
+        </view>
+    </view>
+</tui-modal>

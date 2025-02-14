@@ -1,0 +1,8 @@
+<view class="list-viewer">
+    <slot></slot>
+    <tui-no-data bind:__l="__l" bindclick="{{c}}" uI="f99bcdf2-0" uP="{{d}}" uS="{{['d']}}" wx:if="{{a}}">
+        <text class="tui-color__black">{{b}}</text>
+    </tui-no-data>
+    <tui-loadmore bind:__l="__l" data-c-h="{{!e}}" uI="f99bcdf2-1" uP="{{f}}" wx:if="{{f}}"></tui-loadmore>
+    <tui-nomore bind:__l="__l" data-c-h="{{!g}}" uI="f99bcdf2-2" uP="{{h}}" wx:if="{{h}}"></tui-nomore>
+</view>

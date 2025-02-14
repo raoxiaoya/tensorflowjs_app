@@ -1,0 +1,6 @@
+<view catchtouchmove="{{l}}" class="data-v-94eeb7cd">
+    <view class="{{['tui-popup-class','tui-bottom-popup','data-v-94eeb7cd',a&&'tui-popup-show',b&&'tui-popup-radius',c&&'tui-bp__safearea']}}" style="{{'background:'+d+';'+'height:'+e+';'+'z-index:'+f+';'+'transform:'+g}}">
+        <slot></slot>
+    </view>
+    <view bindtap="{{k}}" class="{{['tui-popup-mask','data-v-94eeb7cd',i]}}" style="{{'z-index:'+j}}" wx:if="{{h}}"></view>
+</view>

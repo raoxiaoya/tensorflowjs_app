@@ -1,0 +1,53 @@
+<view class="header">
+    <view class="title">{{a}}</view>
+    <view class="filters">
+        <block wx:if="{{b}}">
+            <view bindtap="{{f}}" class="{{['dropdowner',e&&'selected']}}" hoverClass="tap-hover">
+                <iconfont bind:__l="__l" uI="68deeaac-0" uP="{{d}}" wx:if="{{c}}"></iconfont> 个人榜 </view>
+            <view bindtap="{{j}}" class="{{['dropdowner',i&&'selected']}}" hoverClass="tap-hover">
+                <iconfont bind:__l="__l" uI="68deeaac-1" uP="{{h}}" wx:if="{{g}}"></iconfont> 团队榜 </view>
+        </block>
+        <block wx:if="{{k}}">
+            <view bindtap="{{n}}" class="dropdowner" hoverClass="tap-hover">{{l}} <iconfont bind:__l="__l" uI="68deeaac-2" uP="{{m}}" wx:if="{{m}}"></iconfont>
+            </view>
+            <tui-picker bind:__l="__l" bindchange="{{o}}" bindhide="{{p}}" uI="68deeaac-3" uP="{{q}}" wx:if="{{q}}"></tui-picker>
+        </block>
+    </view>
+</view>
+<view class="ranking">
+    <list-viewer bind:__l="__l" uI="68deeaac-4" uP="{{t}}" uS="{{['d']}}" wx:if="{{r}}">
+        <view class="ranking-item" wx:for="{{s}}" wx:key="n">
+            <image mode="widthFix" src="{{item.b}}" wx:if="{{item.a}}"></image>
+            <label class="serial" wx:else>{{item.c}}</label>
+            <avatar bind:__l="__l" uI="{{item.d}}" uP="{{item.e}}" wx:if="{{item.e}}"></avatar>
+            <view class="details">
+                <view class="nick">{{item.f}}</view>
+                <view class="signs">{{item.g}} {{item.h}}</view>
+            </view>
+            <view class="results">
+                <block wx:if="{{item.i}}">
+                    <view class="number" wx:if="{{item.j}}">{{item.k}}个 </view>
+                    <view class="number" wx:else>{{item.l}}</view>
+                </block>
+                <view class="number" wx:else>{{item.m}}</view>
+            </view>
+        </view>
+    </list-viewer>
+    <list-viewer bind:__l="__l" uI="68deeaac-6" uP="{{x}}" uS="{{['d']}}" wx:if="{{v}}">
+        <view class="ranking-item" wx:for="{{w}}" wx:key="l">
+            <image mode="widthFix" src="{{item.b}}" wx:if="{{item.a}}"></image>
+            <view class="num" wx:else>{{item.c}}</view>
+            <view class="details">
+                <view class="team">{{item.d}}</view>
+                <view class="signs">{{item.e}}人次, 用时{{item.f}}</view>
+            </view>
+            <view class="results">
+                <block wx:if="{{item.g}}">
+                    <view class="number" wx:if="{{item.h}}">{{item.i}}个 </view>
+                    <view class="number" wx:else>{{item.j}}</view>
+                </block>
+                <view class="number" wx:else>{{item.k}}</view>
+            </view>
+        </view>
+    </list-viewer>
+</view>

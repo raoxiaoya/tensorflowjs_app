@@ -1,0 +1,10 @@
+<view catchtouchmove="{{r}}" class="data-v-ca4bcff6">
+    <view class="{{['tui-actionsheet','data-v-ca4bcff6',k&&'tui-actionsheet-show',l&&'tui-actionsheet-radius']}}" style="{{'z-index:'+m}}">
+        <view class="tui-actionsheet-tips data-v-ca4bcff6" style="{{'font-size:'+c+';'+'color:'+d}}" wx:if="{{a}}">{{b}}</view>
+        <view class="{{['data-v-ca4bcff6',f]}}">
+            <view bindtap="{{item.f}}" class="{{['tui-actionsheet-btn','tui-actionsheet-divider','data-v-ca4bcff6',item.b&&'tui-btn-last']}}" data-index="{{item.c}}" hoverClass="tui-actionsheet-hover" hoverStayTime="{{150}}" style="{{'color:'+item.d+';'+'font-size:'+item.e}}" wx:for="{{e}}" wx:key="g">{{item.a}}</view>
+        </view>
+        <view bindtap="{{j}}" class="tui-actionsheet-btn tui-actionsheet-cancel data-v-ca4bcff6" hoverClass="tui-actionsheet-hover" hoverStayTime="{{150}}" style="{{'font-size:'+h+';'+'color:'+i}}" wx:if="{{g}}">取消</view>
+    </view>
+    <view bindtap="{{q}}" class="{{['tui-actionsheet-mask','data-v-ca4bcff6',n&&'tui-mask-show']}}" style="{{'background:'+o+';'+'z-index:'+p}}"></view>
+</view>

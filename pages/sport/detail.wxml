@@ -1,0 +1,81 @@
+<pager-container bind:__l="__l" uI="64881dcb-0" uP="{{O}}" uS="{{['d']}}" wx:if="{{O}}">
+    <view class="player" wx:if="{{a}}">
+        <video autoplay loop muted controls="{{false}}" showProgress="{{false}}" src="{{b}}"></video>
+    </view>
+    <view class="panel" wx:if="{{c}}">
+        <view class="mode-tabs">
+            <tui-tabs bind:__l="__l" bindchange="{{d}}" uI="64881dcb-1,64881dcb-0" uP="{{e}}" wx:if="{{e}}"></tui-tabs>
+        </view>
+        <view class="targets-seter" wx:if="{{f}}">
+            <view class="number">自由锻炼</view>
+        </view>
+        <view class="targets-seter" wx:else>
+            <view bindtap="{{h}}" class="button" hoverClass="tap-hover">
+                <iconfont bind:__l="__l" uI="64881dcb-2,64881dcb-0" uP="{{g}}" wx:if="{{g}}"></iconfont>
+            </view>
+            <view class="number">
+                <text wx:if="{{i}}">{{j}}</text>
+                <text wx:else>{{k}} 个 </text>
+            </view>
+            <view bindtap="{{m}}" class="button" hoverClass="tap-hover">
+                <iconfont bind:__l="__l" uI="64881dcb-3,64881dcb-0" uP="{{l}}" wx:if="{{l}}"></iconfont>
+            </view>
+        </view>
+        <tui-button bind:__l="__l" bindclick="{{n}}" uI="64881dcb-4,64881dcb-0" uP="{{o}}" uS="{{['d']}}" wx:if="{{o}}">开始锻炼</tui-button>
+        <view class="content-tabs" style="{{'width:'+r}}">
+            <tui-tabs bind:__l="__l" bindchange="{{p}}" uI="64881dcb-5,64881dcb-0" uP="{{q}}" wx:if="{{q}}"></tui-tabs>
+        </view>
+        <view class="intro" wx:if="{{s}}">
+            <text>{{t}}</text>
+        </view>
+        <list-viewer bind:__l="__l" class="rankings" uI="64881dcb-6,64881dcb-0" uP="{{y}}" uS="{{['d']}}" wx:if="{{v}}">
+            <block wx:if="{{w}}">
+                <view class="ranking-item" wx:for="{{x}}" wx:key="h">
+                    <view class="serial">{{item.a}}</view>
+                    <avatar bind:__l="__l" uI="{{item.b}}" uP="{{item.c}}" wx:if="{{item.c}}"></avatar>
+                    <view class="nick">{{item.d}}</view>
+                    <view class="results">
+                        <view class="number" wx:if="{{item.e}}">{{item.f}}个 </view>
+                        <view class="number">{{item.g}}</view>
+                    </view>
+                </view>
+            </block>
+        </list-viewer>
+        <view class="my-fitness" wx:if="{{z}}">
+            <view class="row">
+                <view>
+                    <view class="icon">
+                        <iconfont bind:__l="__l" uI="64881dcb-8,64881dcb-0" uP="{{A}}" wx:if="{{A}}"></iconfont>
+                    </view>
+                    <view class="number" wx:if="{{B}}">{{C}}</view>
+                    <view class="number" wx:if="{{D}}">{{E}}</view>
+                    <view class="field"> 今日累计锻炼 </view>
+                </view>
+                <view>
+                    <view class="icon">
+                        <iconfont bind:__l="__l" uI="64881dcb-9,64881dcb-0" uP="{{F}}" wx:if="{{F}}"></iconfont>
+                    </view>
+                    <view class="number" wx:if="{{G}}">{{H}}个 </view>
+                    <view class="number" wx:if="{{I}}">{{J}}</view>
+                    <view class="field"> 最高记录 </view>
+                </view>
+            </view>
+            <view class="row">
+                <view>
+                    <view class="icon">
+                        <iconfont bind:__l="__l" uI="64881dcb-10,64881dcb-0" uP="{{K}}" wx:if="{{K}}"></iconfont>
+                    </view>
+                    <view class="number">{{L}}</view>
+                    <view class="field"> 累计燃烧（千卡） </view>
+                </view>
+                <view>
+                    <view class="icon">
+                        <iconfont bind:__l="__l" uI="64881dcb-11,64881dcb-0" uP="{{M}}" wx:if="{{M}}"></iconfont>
+                    </view>
+                    <view class="number">{{N}}</view>
+                    <view class="field"> 累计锻炼时长 </view>
+                </view>
+            </view>
+        </view>
+    </view>
+</pager-container>

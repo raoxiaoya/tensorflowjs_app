@@ -1,0 +1,4 @@
+<view catchtap="{{m}}" class="{{['tui-checkbox__input','data-v-9b71dea1',h&&'tui-checkbox__disabled']}}" style="{{'background-color:'+i+';'+'border:'+j+';'+'zoom:'+k+';'+'transform:'+l}}">
+    <view class="tui-check__mark data-v-9b71dea1" style="{{'border-bottom-color:'+b+';'+'border-right-color:'+c}}" wx:if="{{a}}"></view>
+    <checkbox hidden checked="{{g}}" class="tui-checkbox__hidden data-v-9b71dea1" color="{{d}}" disabled="{{e}}" style="position:absolute;opacity:0" value="{{f}}"></checkbox>
+</view>

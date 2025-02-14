@@ -1,0 +1,25 @@
+<tui-modal bind:__l="__l" uI="52bdb3ac-0" uP="{{s}}" uS="{{['d']}}" wx:if="{{s}}">
+    <view class="homework-sport-modal">
+        <view class="sport-activity-modal title">{{a}}</view>
+        <view class="form-panel">
+            <form-item bind:__l="__l" class="form-item" uI="52bdb3ac-1,52bdb3ac-0" uP="{{e}}" uS="{{['inputer']}}" wx:if="{{e}}">
+                <view class="inputer" slot="inputer">
+                    <sport-selector bind:__l="__l" bindonSelect="{{b}}" bindupdateModelValue="{{c}}" uI="52bdb3ac-2,52bdb3ac-1" uP="{{d}}" wx:if="{{d}}"></sport-selector>
+                </view>
+            </form-item>
+            <form-item bind:__l="__l" class="form-item" uI="52bdb3ac-3,52bdb3ac-0" uP="{{h}}" uS="{{['inputer']}}" wx:if="{{h}}">
+                <input bindinput="{{g}}" maxlength="{{4}}" placeholder="请输入本运的任务量，计次：个；计时：秒" placeholderClass="placeholder" slot="inputer" type="number" value="{{f}}"></input>
+            </form-item>
+            <form-item bind:__l="__l" class="form-item" uI="52bdb3ac-4,52bdb3ac-0" uP="{{k}}" uS="{{['inputer']}}" wx:if="{{k}}">
+                <input bindinput="{{j}}" maxlength="{{4}}" placeholder="请输入本次任务的达标完成量" placeholderClass="placeholder" slot="inputer" type="number" value="{{i}}"></input>
+            </form-item>
+            <form-item bind:__l="__l" class="form-item" uI="52bdb3ac-5,52bdb3ac-0" uP="{{n}}" uS="{{['inputer']}}" wx:if="{{n}}">
+                <input bindinput="{{m}}" maxlength="{{4}}" placeholder="请输入本次任务的优秀完成量" placeholderClass="placeholder" slot="inputer" type="number" value="{{l}}"></input>
+            </form-item>
+        </view>
+        <view class="actions-box">
+            <tui-button bind:__l="__l" bindclick="{{o}}" uI="52bdb3ac-6,52bdb3ac-0" uP="{{p}}" uS="{{['d']}}" wx:if="{{p}}"> 确定 </tui-button>
+            <tui-button bind:__l="__l" bindclick="{{q}}" uI="52bdb3ac-7,52bdb3ac-0" uP="{{r}}" uS="{{['d']}}" wx:if="{{r}}"> 取消 </tui-button>
+        </view>
+    </view>
+</tui-modal>

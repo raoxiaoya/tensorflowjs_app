@@ -1,0 +1,12 @@
+<view class="container">
+    <view class="title">
+        <image src="{{a}}"></image>
+        <text>云智「AI运动识别插件」演示</text>
+    </view>
+    <view class="box">
+        <view class="intro"> 本插件可以为您的小程序，赋于<text>人体检测识别、运动检测识别、姿态识别检测</text>AI能力。本地原生识别引擎，无需依赖任何后台或第三方服务，有着<text>识别速度快、体验佳、扩展性强、集成快、成本低</text>的特点，欢迎使用体验。 </view>
+        <button bindtap="{{b}}" class="button primary" hoverClass="hover"> 立即体验 </button>
+        <button openType="contact">联系我们</button>
+    </view>
+    <view class="copyright"> © 云智科技 yztob.com 2022-2024 </view>
+</view>

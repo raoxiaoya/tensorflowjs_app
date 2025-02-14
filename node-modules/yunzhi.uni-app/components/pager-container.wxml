@@ -1,0 +1,9 @@
+<view class="container">
+    <view hidden="{{!f}}">
+        <slot wx:if="{{a}}"></slot>
+        <tui-no-data bind:__l="__l" bindclick="{{d}}" uI="03b0e046-0" uP="{{e}}" uS="{{['d']}}" wx:if="{{b}}">
+            <text class="tui-color__black">{{c}}</text>
+        </tui-no-data>
+    </view>
+    <pager-loading bind:__l="__l" data-c-h="{{!g}}" uI="03b0e046-1" uP="{{h}}" wx:if="{{h}}"></pager-loading>
+</view>

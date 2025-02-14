@@ -1,0 +1,7 @@
+<view class="tui-form__box data-v-145a9cb1" style="{{'background-color:'+k+';'+'padding:'+l+';'+'border-radius:'+m}}">
+    <slot></slot>
+    <view class="{{['tui-form__errmsg','data-v-145a9cb1',i&&'tui-message__show']}}" style="{{'top:'+e+';'+'padding:'+f+';'+'background-color:'+g+';'+'border-radius:'+h}}" wx:if="{{a}}">
+        <text class="tui-form__text data-v-145a9cb1" style="{{'font-size:'+c+';'+'color:'+d}}">{{b}}</text>
+    </view>
+    <view class="tui-form__mask data-v-145a9cb1" wx:if="{{j}}"></view>
+</view>

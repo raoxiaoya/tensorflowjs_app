@@ -1,0 +1,38 @@
+<view class="sport-evaluate" wx:if="{{a}}">
+    <view class="header">
+        <view class="title">{{b}}</view>
+        <view class="input-wrapper-box">
+            <tui-input bind:__l="__l" bindblur="{{c}}" bindupdateModelValue="{{d}}" uI="cea694f2-0" uP="{{e}}" wx:if="{{e}}"></tui-input>
+            <label class="unit">{{f}}</label>
+        </view>
+    </view>
+    <view class="graphic">
+        <view class="reference-box">
+            <view class="reference">{{g}}</view>
+            <view class="reference">{{h}}</view>
+            <view class="reference">{{i}}</view>
+        </view>
+        <view class="color-bar-box">
+            <view class="color-bar"></view>
+            <view class="color-bar"></view>
+            <view class="color-bar"></view>
+            <view class="color-bar"></view>
+            <view class="ball-box" style="{{l}}" wx:if="{{j}}">
+                <view class="tips">{{k}}</view>
+                <view class="ball"></view>
+            </view>
+        </view>
+        <view class="grade-box">
+            <view class="grade"> 不及格 </view>
+            <view class="grade"> 及格 </view>
+            <view class="grade"> 良好 </view>
+            <view class="grade"> 优秀 </view>
+        </view>
+        <view class="individual-box" wx:if="{{m}}">
+            <view class="current"> 当前分数： <view class="num">{{n}}</view>
+            </view>
+            <view class="weighting"> 根据百分比计算后得分：{{o}}×{{p}}%={{q}}</view>
+        </view>
+    </view>
+    <view class="suggestion" wx:if="{{r}}">{{s}}</view>
+</view>

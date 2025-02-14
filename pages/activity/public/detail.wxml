@@ -1,0 +1,109 @@
+<pager-container bind:__l="__l" class="container" uI="753413f6-0" uP="{{aw}}" uS="{{['d']}}" wx:if="{{aw}}">
+    <login-modal bind:__l="__l" uI="753413f6-1,753413f6-0" uP="{{a}}" wx:if="{{a}}"></login-modal>
+    <activity-password-modal bind:__l="__l" bindonPass="{{b}}" bindupdateModelValue="{{c}}" uI="753413f6-2,753413f6-0" uP="{{d}}" wx:if="{{d}}"></activity-password-modal>
+    <view class="{{['header',g&&'light']}}" style="{{'top:'+h+';'+'height:'+i+';'+'line-height:'+j}}">
+        <view bindtap="{{f}}" class="backer" hoverClass="tap-hover">
+            <iconfont bind:__l="__l" uI="753413f6-3,753413f6-0" uP="{{e}}" wx:if="{{e}}"></iconfont>
+        </view>
+    </view>
+    <view class="{{['top-box',D&&'fuzzy']}}" wx:if="{{k}}">
+        <image class="banner" mode="widthFix" src="{{l}}"></image>
+        <view class="title">
+            <tag bind:__l="__l" uI="753413f6-4,753413f6-0" uP="{{n}}" uS="{{['d']}}" wx:if="{{n}}">{{m}}</tag> {{o}}</view>
+        <view class="descripts">
+            <view class="row">
+                <tag bind:__l="__l" uI="753413f6-5,753413f6-0" uP="{{q}}" uS="{{['d']}}" wx:if="{{p}}"> 公开 </tag>
+                <tag bind:__l="__l" uI="753413f6-6,753413f6-0" uP="{{r||''}}" uS="{{['d']}}" wx:else> 独有 </tag>
+                <tag bind:__l="__l" uI="753413f6-7,753413f6-0" uP="{{t}}" uS="{{['d']}}" wx:if="{{t}}">{{s}}</tag>
+                <tag bind:__l="__l" uI="753413f6-8,753413f6-0" uP="{{w}}" uS="{{['d']}}" wx:if="{{v}}"> 团组 </tag>
+            </view>
+            <view class="row">
+                <label>开始时间：</label>
+                <text>{{x}}</text>
+            </view>
+            <view class="row">
+                <label>截止时间：</label>
+                <text>{{y}}</text>
+            </view>
+            <view class="row">
+                <label>举办：</label>
+                <text>{{z}}</text>
+            </view>
+            <view class="row">
+                <label>已参赛：</label>
+                <text>{{A}}人</text>
+            </view>
+        </view>
+        <view class="intro" wx:if="{{B}}">{{C}}</view>
+    </view>
+    <view bindtap="{{H}}" class="{{['signin',G&&'fuzzy']}}" hoverClass="tap-hover" wx:if="{{E}}">
+        <view class="title">您已签到，可以参赛/打卡了</view>
+        <view class="descript">{{F}}</view>
+    </view>
+    <view class="{{['sports',K&&'fuzzy']}}" wx:if="{{I}}">
+        <view class="title">活动项目</view>
+        <view class="body">
+            <activity-sport-item bind:__l="__l" bindonJoining="{{item.b}}" uI="{{item.c}}" uP="{{item.d}}" wx:for="{{J}}" wx:key="a"></activity-sport-item>
+        </view>
+    </view>
+    <view class="{{['ranking',ah&&'fuzzy']}}" id="ranking">
+        <view class="title">排行榜</view>
+        <view class="filters">
+            <block wx:if="{{L}}">
+                <view bindtap="{{P}}" class="{{['dropdowner',O&&'selected']}}" hoverClass="tap-hover">
+                    <iconfont bind:__l="__l" uI="753413f6-10,753413f6-0" uP="{{N}}" wx:if="{{M}}"></iconfont> 个人榜 </view>
+                <view bindtap="{{T}}" class="{{['dropdowner',S&&'selected']}}" hoverClass="tap-hover">
+                    <iconfont bind:__l="__l" uI="753413f6-11,753413f6-0" uP="{{R}}" wx:if="{{Q}}"></iconfont> 团队榜 </view>
+            </block>
+            <block wx:if="{{U}}">
+                <view bindtap="{{X}}" class="dropdowner" hoverClass="tap-hover">{{V}} <iconfont bind:__l="__l" uI="753413f6-12,753413f6-0" uP="{{W}}" wx:if="{{W}}"></iconfont>
+                </view>
+                <tui-picker bind:__l="__l" bindchange="{{Y}}" bindhide="{{Z}}" uI="753413f6-13,753413f6-0" uP="{{aa}}" wx:if="{{aa}}"></tui-picker>
+            </block>
+        </view>
+        <list-viewer bind:__l="__l" uI="753413f6-14,753413f6-0" uP="{{ad}}" uS="{{['d']}}" wx:if="{{ab}}">
+            <view class="ranking-item" wx:for="{{ac}}" wx:key="m">
+                <image mode="widthFix" src="{{item.b}}" wx:if="{{item.a}}"></image>
+                <label class="serial" wx:else>{{item.c}}</label>
+                <avatar bind:__l="__l" uI="{{item.d}}" uP="{{item.e}}" wx:if="{{item.e}}"></avatar>
+                <view class="details">
+                    <view class="nick">{{item.f}}</view>
+                    <view class="signs">{{item.g}}</view>
+                </view>
+                <view class="results">
+                    <block wx:if="{{item.h}}">
+                        <view class="number" wx:if="{{item.i}}">{{item.j}}个 </view>
+                        <view class="number" wx:else>{{item.k}}</view>
+                    </block>
+                    <view class="number" wx:else>{{item.l}}</view>
+                </view>
+            </view>
+        </list-viewer>
+        <list-viewer bind:__l="__l" uI="753413f6-16,753413f6-0" uP="{{ag}}" uS="{{['d']}}" wx:if="{{ae}}">
+            <view class="ranking-item" wx:for="{{af}}" wx:key="l">
+                <image mode="widthFix" src="{{item.b}}" wx:if="{{item.a}}"></image>
+                <view class="num" wx:else>{{item.c}}</view>
+                <view class="details">
+                    <view class="team">{{item.d}}</view>
+                    <view class="signs">{{item.e}}人次, 用时{{item.f}}</view>
+                </view>
+                <view class="results">
+                    <block wx:if="{{item.g}}">
+                        <view class="number" wx:if="{{item.h}}">{{item.i}}个 </view>
+                        <view class="number" wx:else>{{item.j}}</view>
+                    </block>
+                    <view class="number" wx:else>{{item.k}}</view>
+                </view>
+            </view>
+        </list-viewer>
+    </view>
+    <activity-signin-widget bind:__l="__l" bindonSignin="{{ak}}" class="r" uI="753413f6-17,753413f6-0" uP="{{al}}" uR="signiner" wx:if="{{ai}}"></activity-signin-widget>
+    <view class="actions">
+        <tui-button bind:__l="__l" bindclick="{{an}}" uI="753413f6-18,753413f6-0" uP="{{ao}}" uS="{{['d']}}" wx:if="{{ao}}">
+            <iconfont bind:__l="__l" uI="753413f6-19,753413f6-18" uP="{{am}}" wx:if="{{am}}"></iconfont> 榜单 </tui-button>
+        <tui-button bind:__l="__l" bindclick="{{ar}}" uI="753413f6-20,753413f6-0" uP="{{as}}" uS="{{['d']}}" wx:if="{{ap}}">
+            <iconfont bind:__l="__l" uI="753413f6-21,753413f6-20" uP="{{aq}}" wx:if="{{aq}}"></iconfont> 签到 </tui-button>
+        <tui-button bind:__l="__l" uI="753413f6-22,753413f6-0" uP="{{av}}" uS="{{['d']}}" wx:if="{{av}}">
+            <iconfont bind:__l="__l" uI="753413f6-23,753413f6-22" uP="{{at}}" wx:if="{{at}}"></iconfont> 分享 </tui-button>
+    </view>
+</pager-container>

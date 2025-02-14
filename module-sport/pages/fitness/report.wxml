@@ -1,0 +1,45 @@
+<view class="container">
+    <view class="title" style="{{'margin-top:'+a}}">锻炼报告</view>
+    <view class="main">
+        <view class="box">
+            <view class="header">
+                <avatar bind:__l="__l" uI="62d513be-0" uP="{{b}}" wx:if="{{b}}"></avatar>
+            </view>
+            <view class="fields">
+                <view class="sport-name">{{c}}</view>
+                <view>挑战自我，超越极限，让运动成就更强大的自己！</view>
+            </view>
+            <view class="numbers">
+                <view class="bar" wx:if="{{d}}">
+                    <text>数量</text>
+                    <text>{{e}}个</text>
+                </view>
+                <view class="bar">
+                    <text>时长</text>
+                    <text>{{f}}</text>
+                </view>
+                <view class="bar">
+                    <text>热量</text>
+                    <text>{{g}}卡</text>
+                </view>
+            </view>
+            <view class="divider">
+                <view class="circle"></view>
+                <view class="circle"></view>
+            </view>
+            <view class="footer">
+                <view class="qrcode">
+                    <image src="{{h}}"></image>
+                </view>
+                <view class="descr">
+                    <view>{{i}}</view>
+                    <text>AI辅助让运动健身更具乐趣、科学、有效，欢迎体验！</text>
+                </view>
+            </view>
+        </view>
+        <view class="actions">
+            <tui-button bind:__l="__l" bindclick="{{j}}" uI="62d513be-1" uP="{{k}}" uS="{{['d']}}" wx:if="{{k}}">返回</tui-button>
+            <tui-button bind:__l="__l" uI="62d513be-2" uP="{{l}}" uS="{{['d']}}" wx:if="{{l}}">分享</tui-button>
+        </view>
+    </view>
+</view>

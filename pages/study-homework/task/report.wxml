@@ -1,0 +1,27 @@
+<view class="container">
+    <view class="medals">
+        <image src="{{a}}"></image>
+        <image src="{{b}}"></image>
+        <image src="{{c}}"></image>
+    </view>
+    <view class="tips">作业提交成功，体育锻炼贵在坚持，坚持不懈必有所获！</view>
+    <view class="score" wx:if="{{d}}">
+        <view class="counts" wx:if="{{e}}">
+            <text>运动量</text>
+            <view class="number"> 120<text class="unit">个</text>
+            </view>
+        </view>
+        <view class="times">
+            <text>{{f}}</text>
+            <view class="number"> 12'32" </view>
+        </view>
+        <view class="grade">
+            <text>等级</text>
+            <view class="number">{{g}}</view>
+        </view>
+    </view>
+    <view class="actions">
+        <tui-button bind:__l="__l" uI="cd6c23bc-0" uP="{{h}}" uS="{{['d']}}" wx:if="{{h}}"> 分享 </tui-button>
+        <navigator url="{{i}}">继续作业</navigator>
+    </view>
+</view>

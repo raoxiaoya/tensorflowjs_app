@@ -1,0 +1,1 @@
+<text bindtap="{{h}}" class="{{['tui-icon','data-v-6c146404',b,c]}}" style="{{'color:'+d+';'+'font-size:'+e+';'+'font-weight:'+f+';'+'margin:'+g}}">{{a}}</text>

@@ -1,0 +1,23 @@
+<view class="tui-picker__box data-v-7ff41a93">
+    <view bindtap="{{c}}" class="{{['tui-mask__screen','data-v-7ff41a93',b]}}" style="{{'z-index:'+a}}"></view>
+    <view class="{{['tui-picker__wrap','data-v-7ff41a93',N,O]}}" style="{{'background-color:'+L+';'+'z-index:'+M}}">
+        <view class="tui-picker__header data-v-7ff41a93" style="{{'background-color:'+q}}">
+            <view catchtap="{{e}}" class="tui-picker__btn-cancle data-v-7ff41a93" hoverClass="tui-picker__opcity" hoverStayTime="{{150}}" style="{{'color:'+f+';'+'font-size:'+g+';'+'font-weight:'+h}}">{{d}}</view>
+            <view class="tui-picker__title data-v-7ff41a93" style="{{'font-size:'+j+';'+'color:'+k}}">{{i}}</view>
+            <view catchtap="{{m}}" class="tui-picker__btn-sure data-v-7ff41a93" hoverClass="tui-picker__opcity" hoverStayTime="{{150}}" style="{{'color:'+n+';'+'font-size:'+o+';'+'font-weight:'+p}}">{{l}}</view>
+        </view>
+        <view catchtouchstart="{{K}}" class="data-v-7ff41a93">
+            <picker-view bindchange="{{I}}" bindpickend="{{J}}" class="tui-picker__view data-v-7ff41a93" immediateChange="{{H}}" indicatorStyle="{{F}}" key="{{D}}" maskStyle="{{E}}" value="{{G}}">
+                <picker-view-column class="data-v-7ff41a93">
+                    <view class="tui-picker__item data-v-7ff41a93" style="{{'color:'+s+';'+'font-size:'+t}}" wx:for="{{r}}" wx:key="b">{{item.a}}</view>
+                </picker-view-column>
+                <picker-view-column class="data-v-7ff41a93" wx:if="{{v}}">
+                    <view class="tui-picker__item data-v-7ff41a93" style="{{'color:'+x+';'+'font-size:'+y}}" wx:for="{{w}}" wx:key="b">{{item.a}}</view>
+                </picker-view-column>
+                <picker-view-column class="data-v-7ff41a93" wx:if="{{z}}">
+                    <view class="tui-picker__item data-v-7ff41a93" style="{{'color:'+B+';'+'font-size:'+C}}" wx:for="{{A}}" wx:key="b">{{item.a}}</view>
+                </picker-view-column>
+            </picker-view>
+        </view>
+    </view>
+</view>

@@ -1,0 +1,42 @@
+<view class="bmi-evaluate">
+    <view class="header">
+        <view class="title"> BMI </view>
+        <view class="input-wrapper-box">
+            <tui-input bind:__l="__l" bindblur="{{a}}" bindupdateModelValue="{{b}}" uI="6bd4ba06-0" uP="{{c}}" wx:if="{{c}}"></tui-input>
+            <label class="unit">厘米</label>
+        </view>
+        <view class="input-wrapper-box">
+            <tui-input bind:__l="__l" bindblur="{{d}}" bindupdateModelValue="{{e}}" uI="6bd4ba06-1" uP="{{f}}" wx:if="{{f}}"></tui-input>
+            <label class="unit">千克</label>
+        </view>
+    </view>
+    <view class="graphic">
+        <view class="reference-box">
+            <view class="reference">{{g}}</view>
+            <view class="reference">{{h}}</view>
+            <view class="reference">{{i}}</view>
+        </view>
+        <view class="color-bar-box">
+            <view class="color-bar"></view>
+            <view class="color-bar"></view>
+            <view class="color-bar"></view>
+            <view class="color-bar"></view>
+            <view class="ball-box" style="{{l}}" wx:if="{{j}}">
+                <view class="tips">{{k}}</view>
+                <view class="ball"></view>
+            </view>
+        </view>
+        <view class="grade-box">
+            <view class="grade"> 低体重 </view>
+            <view class="grade"> 正常 </view>
+            <view class="grade"> 超重 </view>
+            <view class="grade"> 肥胖 </view>
+        </view>
+        <view class="individual-box" wx:if="{{m}}">
+            <view class="current"> 当前分数： <view class="num">{{n}}</view>
+            </view>
+            <view class="weighting"> 根据百分比计算后得分：{{o}}×15%={{p}}</view>
+        </view>
+    </view>
+    <view class="suggestion" wx:if="{{q}}">{{r}}</view>
+</view>

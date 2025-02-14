@@ -1,0 +1,16 @@
+<view class="tui-form__item-outer data-v-2d18d10d" style="{{'margin-top:'+A+';'+'margin-bottom:'+B+';'+'border-radius:'+C+';'+'background:'+D}}">
+    <view bindtap="{{p}}" class="{{['tui-form__item-wrap','data-v-2d18d10d',l&&'tui-form__highlight']}}" style="{{'padding:'+m+';'+'background:'+n+';'+'border-radius:'+o}}">
+        <view class="tui-form__asterisk data-v-2d18d10d" style="{{'color:'+b}}" wx:if="{{a}}">*</view>
+        <view class="tui-form__label data-v-2d18d10d" style="{{e}}" wx:if="{{c}}">{{d}}</view>
+        <view class="tui-form__item-content data-v-2d18d10d">
+            <slot></slot>
+        </view>
+        <slot name="right"></slot>
+        <view class="tui-form__item-bottom data-v-2d18d10d" style="{{'background:'+g+';'+'left:'+h+';'+'right:'+i}}" wx:if="{{f}}"></view>
+        <view class="tui-form__item-arrow data-v-2d18d10d" style="{{'border-color:'+k}}" wx:if="{{j}}"></view>
+    </view>
+    <slot name="row"></slot>
+    <view class="{{['tui-form__item-error','data-v-2d18d10d',v,w,x]}}" style="{{'padding-left:'+y+';'+'padding-right:'+z}}" wx:if="{{q}}">
+        <text class="{{['tui-form__error-text','data-v-2d18d10d',s&&'tui-form__error-right']}}" style="{{'color:'+t}}">{{r}}</text>
+    </view>
+</view>

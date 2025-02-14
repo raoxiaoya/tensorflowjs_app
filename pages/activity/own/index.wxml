@@ -1,0 +1,41 @@
+<login-modal bind:__l="__l" uI="4d3c8e70-0" uP="{{a}}" wx:if="{{a}}"></login-modal>
+<view class="header">
+    <tui-searchbar bind:__l="__l" bindclear="{{c}}" bindsearch="{{b}}" uI="4d3c8e70-1" uP="{{d}}" wx:if="{{d}}"></tui-searchbar>
+    <tui-tab bind:__l="__l" bindchange="{{e}}" uI="4d3c8e70-2" uP="{{f}}" wx:if="{{f}}"></tui-tab>
+</view>
+<view class="activity-list">
+    <list-viewer bind:__l="__l" uI="4d3c8e70-3" uP="{{h}}" uS="{{['d']}}" wx:if="{{h}}">
+        <view class="activity-item" url="{{aty.G}}" wx:for="{{g}}" wx:for-item="aty" wx:key="F">
+            <view class="wrapper">
+                <image mode="aspectFill" src="{{aty.a}}"></image>
+                <view bindtap="{{aty.x}}" class="body" hoverClass="tap-hover">
+                    <view class="title">
+                        <tag bind:__l="__l" uI="{{aty.c}}" uP="{{aty.d}}" uS="{{['d']}}" wx:if="{{aty.d}}">{{aty.b}}</tag> {{aty.e}}</view>
+                    <view class="descs">
+                        <tag bind:__l="__l" uI="{{aty.g}}" uP="{{aty.h}}" uS="{{['d']}}" wx:if="{{aty.f}}"> 公开 </tag>
+                        <tag bind:__l="__l" uI="{{aty.i}}" uP="{{aty.j||''}}" uS="{{['d']}}" wx:else> 独有 </tag>
+                        <tag bind:__l="__l" uI="{{aty.l}}" uP="{{aty.m}}" uS="{{['d']}}" wx:if="{{aty.m}}">{{aty.k}}</tag>
+                        <tag bind:__l="__l" uI="{{aty.o}}" uP="{{aty.p}}" uS="{{['d']}}" wx:if="{{aty.n}}"> 团组 </tag>
+                    </view>
+                    <view class="summary" wx:if="{{aty.q}}"> 口令：<text class="password">{{aty.r}}</text>
+                        <view catchtap="{{aty.v}}" class="copy-wrapper">
+                            <iconfont bind:__l="__l" uI="{{aty.s}}" uP="{{aty.t}}" wx:if="{{aty.t}}"></iconfont>
+                        </view>
+                    </view>
+                    <view class="summary"> 创建：{{aty.w}}</view>
+                </view>
+            </view>
+            <view class="actions">
+                <navigator url="{{aty.y}}">预览</navigator>
+                <navigator url="{{aty.z}}">编辑</navigator>
+                <view bindtap="{{aty.A}}" hoverClass="tap-hover">删除</view>
+                <navigator url="{{aty.B}}">排行榜</navigator>
+                <navigator url="{{aty.C}}">参赛记录</navigator>
+                <view bindtap="{{aty.E}}" hoverClass="tap-hover">{{aty.D}}</view>
+            </view>
+        </view>
+    </list-viewer>
+</view>
+<view style="height:2rpx"></view>
+<navigator class="create-button" url="./build"> + </navigator>
+<tui-actionsheet bind:__l="__l" bindcancel="{{j}}" bindclick="{{i}}" uI="4d3c8e70-10" uP="{{k}}" wx:if="{{k}}"></tui-actionsheet>

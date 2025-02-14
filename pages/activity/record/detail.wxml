@@ -1,0 +1,58 @@
+<pager-container bind:__l="__l" uI="672b990e-0" uP="{{G}}" uS="{{['d']}}" wx:if="{{G}}">
+    <view class="banner">
+        <view bindtap="{{e}}" class="backer" hoverClass="tap-hover" style="{{'top:'+b+';'+'height:'+c+';'+'line-height:'+d}}">
+            <iconfont bind:__l="__l" uI="672b990e-1,672b990e-0" uP="{{a}}" wx:if="{{a}}"></iconfont>
+        </view>
+        <image mode="widthFix" src="{{f}}"></image>
+    </view>
+    <view class="result-box" wx:if="{{g}}">
+        <view class="title">{{h}}</view>
+        <view class="user" wx:if="{{i}}">
+            <avatar bind:__l="__l" uI="672b990e-2,672b990e-0" uP="{{j}}" wx:if="{{j}}"></avatar>
+            <view class="fields">
+                <view class="nick">{{k}}</view>
+                <view class="attime">{{l}}</view>
+            </view>
+        </view>
+        <view class="detail" wx:if="{{m}}">
+            <view class="number" wx:if="{{n}}">{{o}}<text class="unit">个</text>
+            </view>
+            <view class="namber" wx:else>{{p}}</view>
+            <view class="fields">
+                <label>运动</label>
+                <view>{{q}}</view>
+                <label>用时</label>
+                <view>{{r}}</view>
+            </view>
+        </view>
+        <view class="signer">
+            <view class="title">参赛信息</view>
+            <view class="row" wx:if="{{s}}">
+                <label>团队</label>
+                <text>{{t}}</text>
+            </view>
+            <view class="row" wx:if="{{v}}">
+                <label>姓名</label>
+                <text>{{w}}</text>
+            </view>
+            <view class="row" wx:if="{{x}}">
+                <label>手机号</label>
+                <text>{{y}}</text>
+            </view>
+            <view class="row" wx:if="{{z}}">
+                <label>身份证号</label>
+                <text>{{A}}</text>
+            </view>
+            <view class="row" wx:if="{{B}}">
+                <label>备注</label>
+                <text>{{C}}</text>
+            </view>
+        </view>
+    </view>
+    <view class="shorts" wx:if="{{D}}">
+        <button class="icon" openType="share">
+            <iconfont bind:__l="__l" uI="672b990e-3,672b990e-0" uP="{{E}}" wx:if="{{E}}"></iconfont>
+        </button>
+        <navigator class="retry" url="{{F}}">继续</navigator>
+    </view>
+</pager-container>

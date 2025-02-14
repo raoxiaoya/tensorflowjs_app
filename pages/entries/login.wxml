@@ -1,0 +1,44 @@
+<view class="container">
+    <view class="content">
+        <view class="title">用户登录</view>
+        <view class="form-panel">
+            <view class="form-row" wx:if="{{a}}">
+                <button bindtap="{{c}}" class="button primary">{{b}}</button>
+            </view>
+            <view wx:if="{{d}}">
+                <view class="form-row">
+                    <iconfont bind:__l="__l" uI="1883a48a-0" uP="{{e}}" wx:if="{{e}}"></iconfont>
+                    <view class="input-wrapper">
+                        <input bindinput="{{g}}" maxlength="11" placeholder="请输入手机号码" placeholderClass="placeholder" value="{{f}}"></input>
+                        <view class="messager" wx:if="{{h}}">{{i}}</view>
+                    </view>
+                </view>
+                <view class="form-row">
+                    <iconfont bind:__l="__l" uI="1883a48a-1" uP="{{j}}" wx:if="{{j}}"></iconfont>
+                    <view class="input-wrapper">
+                        <view class="wrapper">
+                            <input bindinput="{{l}}" maxlength="20" password="true" placeholder="请输入登录密码" placeholderClass="placeholder" type="text" value="{{k}}"></input>
+                            <navigator class="append" url="./reset-password">忘记密码 </navigator>
+                        </view>
+                        <view class="messager" wx:if="{{m}}">{{n}}</view>
+                    </view>
+                </view>
+                <view class="form-row">
+                    <iconfont bind:__l="__l" uI="1883a48a-2" uP="{{o}}" wx:if="{{o}}"></iconfont>
+                    <view class="input-wrapper">
+                        <view class="wrapper">
+                            <input bindinput="{{q}}" maxlength="20" placeholder="请输入右侧验证码" placeholderClass="placeholder" type="text" value="{{p}}"></input>
+                            <image bindtap="{{s}}" class="captcha-image" mode="widthFix" src="{{r}}"></image>
+                        </view>
+                        <view class="messager" wx:if="{{t}}">{{v}}</view>
+                    </view>
+                </view>
+                <button bindtap="{{w}}" class="button primary"> 登录 </button>
+            </view>
+            <view bindtap="{{y}}" class="guide-link" wx:if="{{x}}"> 使用微信登录 </view>
+            <view bindtap="{{A}}" class="guide-link" wx:if="{{z}}"> 使用密码登录 </view>
+            <navigator class="guide-link" url="./registr" wx:if="{{B}}"> 注册用户 </navigator>
+        </view>
+    </view>
+    <copyright bind:__l="__l" uI="1883a48a-3"></copyright>
+</view>

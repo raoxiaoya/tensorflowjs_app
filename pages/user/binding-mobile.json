@@ -1,0 +1,1 @@
+{"navigationBarTitleText":"绑定手机","enablePullDownRefresh":false,"usingComponents":{"login-modal":"../../components/login-modal","tips-messager":"../../node-modules/yunzhi.uni-app/components/tips-messager","form-item":"../../components/form-item","tui-button":"../../node-modules/yunzhi.uni-app/thorui/tui-button/tui-button"}}

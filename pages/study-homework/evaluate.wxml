@@ -1,0 +1,38 @@
+<view class="container">
+    <view bindtap="{{f}}" class="grade-info">
+        <view wx:if="{{a}}">{{b}} · {{c}} <iconfont bind:__l="__l" uI="a2e706b6-0" uP="{{d}}" wx:if="{{d}}"></iconfont>
+        </view>
+        <view wx:else> 请选择年级 <iconfont bind:__l="__l" uI="a2e706b6-1" uP="{{e}}" wx:if="{{e}}"></iconfont>
+        </view>
+    </view>
+    <view class="score-box">
+        <view class="left">
+            <view class="title">{{g}}体育测试 </view>
+            <view class="tips" wx:if="{{h}}"> 共{{i}}项，总分100分 </view>
+        </view>
+        <view class="right">
+            <view class="score">{{j}}</view>
+            <label class="unit">分</label>
+        </view>
+    </view>
+    <bmi-evaluate bind:__l="__l" bindonResult="{{k}}" uI="a2e706b6-2" uP="{{l}}" wx:if="{{l}}"></bmi-evaluate>
+    <sport-evaluate bind:__l="__l" bindonResult="{{s.a}}" uI="{{s.b}}" uP="{{s.c}}" wx:if="{{s.c}}" wx:for="{{m}}" wx:for-item="s" wx:key="d"></sport-evaluate>
+</view>
+<tui-drawer bind:__l="__l" bindclose="{{x}}" uI="a2e706b6-4" uP="{{y}}" uS="{{['d']}}" wx:if="{{y}}">
+    <view class="drawer-wrapper">
+        <view class="label">选择年级</view>
+        <picker-view bindchange="{{r}}" class="picker-view" indicatorStyle="height: 42px;" value="{{q}}">
+            <picker-view-column>
+                <view class="{{['item',g.b&&'selected']}}" wx:for="{{n}}" wx:for-item="g" wx:key="c">{{g.a}}</view>
+            </picker-view-column>
+            <picker-view-column>
+                <view class="{{['item',o&&'selected']}}">男</view>
+                <view class="{{['item',p&&'selected']}}">女</view>
+            </picker-view-column>
+        </picker-view>
+        <view class="actions">
+            <tui-button bind:__l="__l" bindclick="{{s}}" uI="a2e706b6-5,a2e706b6-4" uP="{{t}}" uS="{{['d']}}" wx:if="{{t}}"> 取消 </tui-button>
+            <tui-button bind:__l="__l" bindclick="{{v}}" uI="a2e706b6-6,a2e706b6-4" uP="{{w}}" uS="{{['d']}}" wx:if="{{w}}"> 确认 </tui-button>
+        </view>
+    </view>
+</tui-drawer>

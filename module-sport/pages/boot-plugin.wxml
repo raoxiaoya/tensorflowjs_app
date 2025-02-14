@@ -1,0 +1,6 @@
+<view class="container">
+    <view class="logo-wrapper">
+        <image src="{{a}}"></image>
+    </view>
+    <view class="text"> 初始化Ai运动插件中，请稍后... </view>
+</view>

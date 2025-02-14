@@ -1,0 +1,7 @@
+<view class="{{['tui-nodata-box','data-v-b3f65d17',n]}}" style="{{'margin-top:'+o}}">
+    <image class="tui-tips-icon data-v-b3f65d17" mode="widthFix" src="{{b}}" style="{{'width:'+c+';'+'height:'+d+';'+'margin-bottom:'+e}}" wx:if="{{a}}"></image>
+    <view class="tui-tips-content data-v-b3f65d17">
+        <slot></slot>
+    </view>
+    <view bindtap="{{m}}" class="tui-tips-btn data-v-b3f65d17" style="{{'width:'+h+';'+'height:'+i+';'+'background:'+j+';'+'border-radius:'+k+';'+'font-size:'+l}}" wx:if="{{f}}">{{g}}</view>
+</view>

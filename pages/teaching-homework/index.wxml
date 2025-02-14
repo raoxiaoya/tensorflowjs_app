@@ -1,0 +1,39 @@
+<view class="container">
+    <tui-tabs bind:__l="__l" bindchange="{{a}}" uI="beb66c78-0" uP="{{b}}" wx:if="{{b}}"></tui-tabs>
+    <list-viewer bind:__l="__l" uI="beb66c78-1" uP="{{e}}" uS="{{['d']}}" wx:if="{{e}}">
+        <view bindtap="{{item.E}}" class="work-item" hoverClass="tap-hover" wx:for="{{c}}" wx:key="D">
+            <view class="title">
+                <view>{{item.a}}</view>
+                <text class="not-issued" wx:if="{{item.b}}"> 待发布 </text>
+                <text style="{{'color:'+item.d}}" wx:else>{{item.c}}</text>
+            </view>
+            <view class="fields">
+                <tag bind:__l="__l" uI="{{item.f}}" uP="{{item.g}}" uS="{{['d']}}" wx:if="{{item.g}}">{{item.e}}</tag>
+                <tag bind:__l="__l" uI="{{item.i}}" uS="{{['d']}}">{{item.h}}</tag>
+                <tag bind:__l="__l" uI="{{item.k}}" uS="{{['d']}}">{{item.j}}</tag>
+            </view>
+            <view class="fields">
+                <tag bind:__l="__l" uI="{{item.m}}" uS="{{['d']}}">{{item.l}}人</tag>
+                <tag bind:__l="__l" uI="{{item.o}}" uS="{{['d']}}">{{item.n}}项</tag>
+            </view>
+            <view class="fields">
+                <tag bind:__l="__l" uI="{{item.p}}" uS="{{['d']}}">作业代码</tag>
+                <text class="code">{{item.q}}</text>
+                <view catchtap="{{item.s}}" class="copy-wrapper" hoverClass="tap-hover">
+                    <iconfont bind:__l="__l" uI="{{item.r}}" uP="{{d}}" wx:if="{{d}}"></iconfont>
+                </view>
+            </view>
+            <view class="teacher">
+                <tag bind:__l="__l" uI="{{item.v}}" uS="{{['d']}}">{{item.t}}</tag> 发布于 {{item.w}}</view>
+            <view class="actions">
+                <navigator url="{{item.x}}">详情</navigator>
+                <navigator url="{{item.y}}">编辑</navigator>
+                <view bindtap="{{item.z}}" hoverClass="tap-hover">删除</view>
+                <navigator url="{{item.A}}">作业列表</navigator>
+                <view bindtap="{{item.C}}" hoverClass="tap-hover">{{item.B}}</view>
+            </view>
+        </view>
+    </list-viewer>
+</view>
+<navigator class="create-button" url="./build"> + </navigator>
+<tui-actionsheet bind:__l="__l" bindcancel="{{g}}" bindclick="{{f}}" uI="beb66c78-10" uP="{{h}}" wx:if="{{h}}"></tui-actionsheet>

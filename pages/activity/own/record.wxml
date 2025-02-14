@@ -1,0 +1,27 @@
+<view class="header">
+    <tui-searchbar bind:__l="__l" bindclear="{{b}}" bindsearch="{{a}}" uI="54bac3cb-0" uP="{{c}}" wx:if="{{c}}"></tui-searchbar>
+</view>
+<list-viewer bind:__l="__l" uI="54bac3cb-1" uP="{{e}}" uS="{{['d']}}" wx:if="{{e}}">
+    <view class="record-item" wx:for="{{d}}" wx:for-item="record" wx:key="B">
+        <view class="content">
+            <image mode="aspectFill" src="{{record.a}}"></image>
+            <view class="fields">
+                <view class="sport-name">{{record.b}}</view>
+                <view class="signer">
+                    <tag bind:__l="__l" uI="{{record.e}}" uP="{{record.f}}" uS="{{['d']}}" wx:if="{{record.c}}">组：{{record.d}}</tag>
+                    <tag bind:__l="__l" uI="{{record.i}}" uP="{{record.j}}" uS="{{['d']}}" wx:if="{{record.g}}">名：{{record.h}}</tag>
+                    <tag bind:__l="__l" uI="{{record.m}}" uP="{{record.n}}" uS="{{['d']}}" wx:if="{{record.k}}">手机：{{record.l}}</tag>
+                    <tag bind:__l="__l" uI="{{record.q}}" uP="{{record.r}}" uS="{{['d']}}" wx:if="{{record.o}}">证号：{{record.p}}</tag>
+                    <tag bind:__l="__l" uI="{{record.v}}" uP="{{record.w}}" uS="{{['d']}}" wx:if="{{record.s}}">备注：{{record.t}}</tag>
+                </view>
+            </view>
+            <view class="counter">
+                <view wx:if="{{record.x}}">{{record.y}}<text class="unit">个</text>
+                </view>
+                <view>{{record.z}}</view>
+            </view>
+        </view>
+        <view class="summary"> 参赛时间：{{record.A}}</view>
+    </view>
+</list-viewer>
+<view style="height:2rpx"></view>

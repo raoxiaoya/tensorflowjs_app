@@ -1,0 +1,1 @@
+.activity-signin-drawer .signin-panel{padding:32rpx 24rpx;position:relative}.activity-signin-drawer .signin-panel .title{font-size:36.2319rpx;text-align:center}.activity-signin-drawer .signin-panel .closer{color:#8e8e8e;height:32rpx;position:absolute;right:36rpx;top:36rpx;width:32rpx;z-index:999}.activity-signin-drawer .signin-panel .closer .iconfont{font-size:42rpx}

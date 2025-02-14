@@ -1,0 +1,22 @@
+<view class="container">
+    <human-detection bind:__l="__l" bindonHumanDetecting="{{b}}" class="r" uI="1764f2cc-0" uP="{{c}}" uR="humanDetection" wx:if="{{c}}"></human-detection>
+    <view class="actions">
+        <button bindtap="{{e}}" class="button warning" hoverClass="hover">{{d}}</button>
+    </view>
+    <view class="summary">
+        <view class="title">{{f}}</view>
+        <view class="row">
+            <view>
+                <label>计数：</label>
+                <text>{{g}}</text>
+            </view>
+            <view>
+                <label>计时：</label>
+                <text>{{h}}</text>
+            </view>
+        </view>
+    </view>
+    <view class="full-screen">
+        <navigator url="{{i}}">全屏模式</navigator>
+    </view>
+</view>

@@ -1,0 +1,49 @@
+<view class="container">
+    <view class="avatar-box">
+        <view class="avatar-editor" wx:if="{{a}}">
+            <avatar bind:__l="__l" bindonEditing="{{b}}" uI="4211d964-0" uP="{{c}}" wx:if="{{c}}"></avatar>
+        </view>
+        <view class="mobile-box" wx:if="{{d}}">
+            <tag bind:__l="__l" uI="4211d964-1" uP="{{g}}" uS="{{['d']}}" wx:if="{{e}}">{{f}}</tag>
+            <tag bind:__l="__l" uI="4211d964-2" uP="{{h||''}}" uS="{{['d']}}" wx:else>未绑定</tag>
+            <navigator class="replace" url="./binding-mobile">
+                <iconfont bind:__l="__l" uI="4211d964-3" uP="{{i}}" wx:if="{{i}}"></iconfont>
+            </navigator>
+        </view>
+    </view>
+    <view class="form-panel">
+        <form-item bind:__l="__l" uI="4211d964-4" uP="{{l}}" uS="{{['inputer']}}" wx:if="{{l}}">
+            <input bindinput="{{k}}" maxlength="{{30}}" placeholder="请输入您的昵称" placeholderClass="placeholder" slot="inputer" type="text" value="{{j}}"></input>
+        </form-item>
+        <form-item bind:__l="__l" uI="4211d964-5" uP="{{o}}" uS="{{['inputer']}}" wx:if="{{o}}">
+            <number-picker bind:__l="__l" bindupdateModelValue="{{m}}" class="inputer" slot="inputer" uI="4211d964-6,4211d964-5" uP="{{n}}"></number-picker>
+        </form-item>
+        <form-item bind:__l="__l" uI="4211d964-7" uP="{{r}}" uS="{{['inputer']}}" wx:if="{{r}}">
+            <number-picker bind:__l="__l" bindupdateModelValue="{{p}}" class="inputer" slot="inputer" uI="4211d964-8,4211d964-7" uP="{{q}}"></number-picker>
+        </form-item>
+        <form-item bind:__l="__l" uI="4211d964-9" uP="{{y}}" uS="{{['inputer']}}" wx:if="{{y}}">
+            <radio-group bindchange="{{x}}" slot="inputer">
+                <label class="radio-item">
+                    <radio checked="{{s}}" color="{{t}}" value="true"></radio>
+                    <text>男</text>
+                </label>
+                <label class="radio-item">
+                    <radio checked="{{v}}" color="{{w}}" value="false"></radio>
+                    <text>女</text>
+                </label>
+            </radio-group>
+        </form-item>
+        <form-item bind:__l="__l" uI="4211d964-10" uP="{{B}}" uS="{{['inputer']}}" wx:if="{{B}}">
+            <region-picker bind:__l="__l" bindupdateModelValue="{{z}}" class="inputer" slot="inputer" uI="4211d964-11,4211d964-10" uP="{{A}}"></region-picker>
+        </form-item>
+        <form-item bind:__l="__l" uI="4211d964-12" uP="{{D}}" uS="{{['inputer']}}" wx:if="{{D}}">
+            <view slot="inputer">{{C}}</view>
+        </form-item>
+        <form-item bind:__l="__l" uI="4211d964-13" uP="{{F}}" uS="{{['inputer']}}" wx:if="{{F}}">
+            <view slot="inputer">{{E}}</view>
+        </form-item>
+    </view>
+    <view class="actions-wrapper">
+        <tui-button bind:__l="__l" bindclick="{{G}}" uI="4211d964-14" uP="{{H}}" uS="{{['d']}}" wx:if="{{H}}">编辑</tui-button>
+    </view>
+</view>

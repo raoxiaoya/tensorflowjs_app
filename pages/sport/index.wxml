@@ -1,0 +1,12 @@
+<view class="container">
+    <list-viewer bind:__l="__l" uI="03576a70-0" uP="{{b}}" uS="{{['d']}}" wx:if="{{b}}">
+        <view class="sport-list">
+            <navigator class="item" url="{{sp.c}}" wx:for="{{a}}" wx:for-item="sp" wx:key="d">
+                <view class="cover">
+                    <image mode="aspectFit" src="{{sp.a}}"></image>
+                </view>
+                <text>{{sp.b}}</text>
+            </navigator>
+        </view>
+    </list-viewer>
+</view>

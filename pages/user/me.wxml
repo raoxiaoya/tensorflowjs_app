@@ -1,0 +1,129 @@
+<view class="container">
+    <view class="top-box" style="{{'padding-top:'+f}}">
+        <view class="profile" wx:if="{{a}}">
+            <navigator url="/pages/user/profile">
+                <avatar bind:__l="__l" uI="09d83ea6-0" uP="{{b}}" wx:if="{{b}}"></avatar>
+            </navigator>
+            <view class="fields">
+                <navigator class="nick" url="/pages/user/profile">{{c}}</navigator>
+                <view>{{d}}</view>
+            </view>
+        </view>
+        <view class="profile none-login" wx:else>
+            <avatar bind:__l="__l" uI="09d83ea6-1"></avatar>
+            <navigator class="nav-login" url="/pages/entries/login">
+                <text>登录/注册</text>
+                <iconfont bind:__l="__l" uI="09d83ea6-2" uP="{{e}}" wx:if="{{e}}"></iconfont>
+            </navigator>
+        </view>
+    </view>
+    <view class="totals">
+        <view>
+            <label>步数</label>
+            <text>{{g}}</text>
+        </view>
+        <view>
+            <label>运动量</label>
+            <text>{{h}}</text>
+        </view>
+        <view>
+            <label>运动时长</label>
+            <text>{{i}}</text>
+        </view>
+    </view>
+    <view class="technical-consult">
+        <view class="consult">
+            <view>技术服务咨询</view>
+            <view class="summary"> 定制同样小程序、云上赛事、Ai体测 </view>
+        </view>
+        <button openType="contact" size="mini"> 立即咨询 </button>
+    </view>
+    <view class="fitness-navs">
+        <navigator class="item sport-record" url="/pages/sport-record/index">
+            <view class="title">运动记录</view>
+            <view class="numbers">{{j}}条 </view>
+        </navigator>
+        <navigator class="item bmi" url="./profile">
+            <view class="title">BMI指数</view>
+            <view class="numbers" wx:if="{{k}}">{{l}} <view class="descript" style="{{'color:'+n}}">{{m}}</view>
+            </view>
+            <view class="numbers" wx:else> -- </view>
+        </navigator>
+    </view>
+    <view class="section-title"> 活动主办 </view>
+    <view class="services-block">
+        <navigator class="item" url="/pages/activity/own/build">
+            <view class="icon-box">
+                <iconfont bind:__l="__l" uI="09d83ea6-3" uP="{{o}}" wx:if="{{o}}"></iconfont>
+            </view>
+            <view class="title">创建活动</view>
+        </navigator>
+        <navigator class="item" url="/pages/activity/own/index">
+            <view class="icon-box">
+                <iconfont bind:__l="__l" uI="09d83ea6-4" uP="{{p}}" wx:if="{{p}}"></iconfont>
+            </view>
+            <view class="title">我的活动</view>
+        </navigator>
+    </view>
+    <view class="section-title"> 体测教师/教练 </view>
+    <view class="services-block">
+        <navigator class="item" url="/pages/teaching-homework/build">
+            <view class="icon-box">
+                <iconfont bind:__l="__l" uI="09d83ea6-5" uP="{{q}}" wx:if="{{q}}"></iconfont>
+            </view>
+            <view class="title">创建作业</view>
+        </navigator>
+        <navigator class="item" url="/pages/teaching-homework/index">
+            <view class="icon-box">
+                <iconfont bind:__l="__l" uI="09d83ea6-6" uP="{{r}}" wx:if="{{r}}"></iconfont>
+            </view>
+            <view class="title">我的作业</view>
+        </navigator>
+    </view>
+    <view class="section-title"> 其他服务 </view>
+    <view class="services-block">
+        <navigator class="item" url="/pages/activity/record/index">
+            <view class="icon-box">
+                <iconfont bind:__l="__l" uI="09d83ea6-7" uP="{{s}}" wx:if="{{s}}"></iconfont>
+            </view>
+            <view class="title">我的参赛</view>
+        </navigator>
+        <navigator class="item" url="/pages/study-homework/homework/index">
+            <view class="icon-box">
+                <iconfont bind:__l="__l" uI="09d83ea6-8" uP="{{t}}" wx:if="{{t}}"></iconfont>
+            </view>
+            <view class="title">我的作业</view>
+        </navigator>
+        <navigator class="item" url="/pages/user/profile">
+            <view class="icon-box">
+                <iconfont bind:__l="__l" uI="09d83ea6-9" uP="{{v}}" wx:if="{{v}}"></iconfont>
+            </view>
+            <view class="title">健身档案</view>
+        </navigator>
+        <navigator class="item" url="./binding-mobile">
+            <view class="icon-box">
+                <iconfont bind:__l="__l" uI="09d83ea6-10" uP="{{w}}" wx:if="{{w}}"></iconfont>
+            </view>
+            <view class="title">绑定手机</view>
+        </navigator>
+        <button class="item contact-service" openType="contact">
+            <view class="icon-box">
+                <iconfont bind:__l="__l" uI="09d83ea6-11" uP="{{x}}" wx:if="{{x}}"></iconfont>
+            </view>
+            <view class="title">联系客服</view>
+        </button>
+        <view bindtap="{{z}}" class="item" hoverClass="tap-hover">
+            <view class="icon-box">
+                <iconfont bind:__l="__l" uI="09d83ea6-12" uP="{{y}}" wx:if="{{y}}"></iconfont>
+            </view>
+            <view class="title">检查更新</view>
+        </view>
+        <navigator class="item" url="../main/about">
+            <view class="icon-box">
+                <iconfont bind:__l="__l" uI="09d83ea6-13" uP="{{A}}" wx:if="{{A}}"></iconfont>
+            </view>
+            <view class="title">关于我们</view>
+        </navigator>
+    </view>
+</view>
+<view style="height:32rpx"></view>

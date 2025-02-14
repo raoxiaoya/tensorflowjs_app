@@ -1,0 +1,18 @@
+<view class="homework-sport-item">
+    <view class="cover">
+        <image mode="aspectFit" src="{{a}}"></image>
+    </view>
+    <view class="content">
+        <view class="name">{{b}}</view>
+        <view class="descr">
+            <text wx:if="{{c}}">{{d}}</text>
+            <text wx:else>{{e}}个 </text>
+            <text wx:if="{{f}}"> 合格:{{g}}</text>
+            <text wx:if="{{h}}"> 优秀:{{i}}</text>
+        </view>
+    </view>
+    <slot name="operates" wx:if="{{$slots.operates}}"></slot>
+    <block wx:else>
+        <tui-button bind:__l="__l" bindclick="{{j}}" uI="6de88e64-0" uP="{{k}}" uS="{{['d']}}" wx:if="{{k}}"> 去完成 </tui-button>
+    </block>
+</view>

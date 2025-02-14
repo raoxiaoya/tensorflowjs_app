@@ -1,0 +1,95 @@
+<view class="container">
+    <view class="promotions">
+        <navigator class="item" style="background:linear-gradient(135deg, #606dff 0%, #a74eff 100%)" url="/pages/activity/own/build">
+            <view class="title">
+                <iconfont bind:__l="__l" uI="7d7fd306-0" uP="{{a}}" wx:if="{{a}}"></iconfont> 云上赛事活动 </view>
+            <view class="descript"> 免费举办全民健身、团建Ai运动赛事 </view>
+        </navigator>
+        <navigator class="item" style="background:linear-gradient(135deg, #e3ce12 0%, #eda63b 100%)" url="/pages/teaching-homework/index">
+            <view class="title">
+                <iconfont bind:__l="__l" uI="7d7fd306-1" uP="{{b}}" wx:if="{{b}}"></iconfont> 学生体测 </view>
+            <view class="descript bodymass"> 义务教育阶段，学生体质测试、作业打卡 </view>
+        </navigator>
+    </view>
+    <view class="promotions">
+        <view bindtap="{{d}}" class="item" hoverClass="tap-hover" style="background:linear-gradient(131.36deg, #36c971 0%, #36b368 100%)">
+            <view class="title">
+                <iconfont bind:__l="__l" uI="7d7fd306-2" uP="{{c}}" wx:if="{{c}}"></iconfont> Ai小程序定制 </view>
+            <view class="descript mini"> 赛事、体测、健身Ai运动小程序定制开发 </view>
+        </view>
+        <navigator class="item" style="background:linear-gradient(132.28deg, #207bfa 0%, #116cd4 100%)" url="/module-sport/pages/boot-plugin?redirectUrl=/module-demo/pages/welcome">
+            <view class="title">
+                <iconfont bind:__l="__l" uI="7d7fd306-3" uP="{{e}}" wx:if="{{e}}"></iconfont> Ai运动解决方案 </view>
+            <view class="descript solution"> 马上拥有与本小程序同等能力的识别插件引擎 </view>
+        </navigator>
+    </view>
+    <view class="shot-navs">
+        <navigator class="item" url="/pages/activity/own/build">
+            <view class="icon-box">
+                <iconfont bind:__l="__l" uI="7d7fd306-4" uP="{{f}}" wx:if="{{f}}"></iconfont>
+            </view>
+            <view class="text">创建活动</view>
+        </navigator>
+        <navigator class="item gray-red" openType="switchTab" url="../activity/public/index">
+            <view class="icon-box">
+                <iconfont bind:__l="__l" uI="7d7fd306-5" uP="{{g}}" wx:if="{{g}}"></iconfont>
+            </view>
+            <view class="text">赛事活动</view>
+        </navigator>
+        <navigator class="item gray-yellow" url="../activity/record/index">
+            <view class="icon-box">
+                <iconfont bind:__l="__l" uI="7d7fd306-6" uP="{{h}}" wx:if="{{h}}"></iconfont>
+            </view>
+            <view class="text">参赛记录</view>
+        </navigator>
+        <navigator class="item gray-yellow" url="../study-homework/evaluate">
+            <view class="icon-box">
+                <iconfont bind:__l="__l" uI="7d7fd306-7" uP="{{i}}" wx:if="{{i}}"></iconfont>
+            </view>
+            <view class="text">体测计算</view>
+        </navigator>
+    </view>
+    <view class="today-fitness">
+        <view bindtap="{{l}}" hoverClass="tap-hover">
+            <view class="number">
+                <text>{{j}}</text>
+                <text class="unit">步</text>
+            </view>
+            <view class="field steps">
+                <text>步数</text>
+                <iconfont bind:__l="__l" uI="7d7fd306-8" uP="{{k}}" wx:if="{{k}}"></iconfont>
+            </view>
+        </view>
+        <view>
+            <view class="number">{{m}}</view>
+            <view class="field"> 锻炼时长 </view>
+        </view>
+        <view>
+            <view class="number">
+                <text>{{n}}</text>
+                <text class="unit">千卡</text>
+            </view>
+            <view class="field"> 消耗热量 </view>
+        </view>
+    </view>
+    <view class="section-title">
+        <text class="title">热门运动</text>
+        <navigator class="appends" openType="switchTab" url="/pages/sport/index">更多</navigator>
+    </view>
+    <scroll-view scrollX class="sport-list">
+        <navigator class="item" url="{{sp.d}}" wx:for="{{o}}" wx:for-item="sp" wx:key="c">
+            <view class="name">{{sp.a}}</view>
+            <image mode="aspectFit" src="{{sp.b}}"></image>
+        </navigator>
+    </scroll-view>
+    <view class="section-title">
+        <text class="title">最新赛事</text>
+        <navigator class="appends" openType="switchTab" url="/pages/activity/public/index">更多</navigator>
+    </view>
+    <list-viewer bind:__l="__l" class="activity-list" uI="7d7fd306-9" uP="{{q}}" uS="{{['d']}}" wx:if="{{q}}">
+        <navigator url="{{aty.d}}" wx:for="{{p}}" wx:for-item="aty" wx:key="c">
+            <activity-item bind:__l="__l" uI="{{aty.a}}" uP="{{aty.b}}" wx:if="{{aty.b}}"></activity-item>
+        </navigator>
+    </list-viewer>
+</view>
+<view style="height:2rpx"></view>

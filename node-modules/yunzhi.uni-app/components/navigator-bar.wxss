@@ -1,0 +1,1 @@
+.navigator-bar{box-sizing:border-box;color:#333;display:-webkit-flex;display:flex;height:auto;left:0;position:fixed;top:16rpx;width:100vw;z-index:9999999}.navigator-bar.white{color:#fff}.navigator-bar .backer{line-height:inherit;margin-right:8px}.navigator-bar .title{flex:1;font-size:32.6087rpx;text-align:center}

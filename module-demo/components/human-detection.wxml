@@ -1,0 +1,20 @@
+<view class="human-detection" style="">
+    <camera binderror="{{d}}" bindinitdone="{{c}}" class="preview" devicePosition="{{b}}" flash="off" frameSize="small" id="preview" resolution="medium" style="{{a}}"></camera>
+    <canvas class="preview graphs" id="graphics" style="{{f}}" type="2d" wx:if="{{e}}"></canvas>
+    <view bindtap="{{h}}" class="toggle-camera-wrapper" hoverClass="toggle-camera-wrapper-hover">
+        <iconfont bind:__l="__l" uI="0f9dfd4b-0" uP="{{g}}" wx:if="{{g}}"></iconfont>
+    </view>
+    <view class="{{['human-indicate-wrapper',j&&'active']}}">
+        <iconfont bind:__l="__l" uI="0f9dfd4b-1" uP="{{i}}" wx:if="{{i}}"></iconfont>
+    </view>
+    <view class="info-box" wx:if="{{k}}">
+        <view>
+            <label>采集FPS：</label>
+            <text>{{l}}</text>
+        </view>
+        <view>
+            <label>识别FPS：</label>
+            <text>{{m}}</text>
+        </view>
+    </view>
+</view>

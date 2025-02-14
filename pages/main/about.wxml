@@ -1,0 +1,12 @@
+<view class="container data-v-c4829b60">
+    <view class="logo_hd data-v-c4829b60">
+        <view class="logo data-v-c4829b60">
+            <image class="data-v-c4829b60" src="{{a}}"></image>
+        </view>
+        <label class="data-v-c4829b60">{{b}} <view class="data-v-c4829b60">V{{c}}</view>
+        </label>
+    </view>
+    <view class="intro data-v-c4829b60">
+        <view class="keynote data-v-c4829b60">「{{d}}」</view>是一款免费提供在线AI运动的平台。平台目前提供<view class="keynote data-v-c4829b60"> 跳绳、开合跳、仰卧起坐、俯卧撑、卷腹、深蹲起、平板支撑、高抬腿、马步蹲、坐位体前屈</view> 等多项AI运动若您有相关需求，欢迎您与我们联系，我们将竭诚为您服务。 </view>
+    <copyright bind:__l="__l" class="data-v-c4829b60" uI="c4829b60-0" uP="{{e}}" wx:if="{{e}}"></copyright>
+</view>

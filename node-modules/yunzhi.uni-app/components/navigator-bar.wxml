@@ -1,0 +1,6 @@
+<view class="{{['navigator-bar',d&&'white']}}" style="{{e}}">
+    <view bindtap="{{b}}" class="backer" hoverClass="tap-hover">
+        <iconfont bind:__l="__l" uI="2f617903-0" uP="{{a}}" wx:if="{{a}}"></iconfont>
+    </view>
+    <view class="title">{{c}}</view>
+</view>

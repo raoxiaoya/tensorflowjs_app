@@ -1,0 +1,65 @@
+<login-modal bind:__l="__l" uI="0c477e4f-0" uP="{{a}}" wx:if="{{a}}"></login-modal>
+<view class="panel-box homework-info" wx:if="{{b}}">
+    <view class="title">{{c}}</view>
+    <view class="fields">
+        <tag bind:__l="__l" uI="0c477e4f-1" uP="{{e}}" uS="{{['d']}}" wx:if="{{e}}">{{d}}</tag>
+        <tag bind:__l="__l" uI="0c477e4f-2" uP="{{g}}" uS="{{['d']}}" wx:if="{{f}}"> 已发布 </tag>
+        <tag bind:__l="__l" uI="0c477e4f-3" uP="{{h||''}}" uS="{{['d']}}" wx:else> 待发布 </tag>
+        <tag bind:__l="__l" uI="0c477e4f-4" uP="{{j}}" uS="{{['d']}}" wx:if="{{i}}"> 进行中 </tag>
+        <tag bind:__l="__l" uI="0c477e4f-5" uP="{{k||''}}" uS="{{['d']}}" wx:else> 已截止 </tag>
+        <tag bind:__l="__l" uI="0c477e4f-6" uP="{{m}}" uS="{{['d']}}" wx:if="{{m}}">{{l}}项</tag>
+    </view>
+    <view class="fields">
+        <tag bind:__l="__l" uI="0c477e4f-7" uS="{{['d']}}">{{n}}</tag>
+        <tag bind:__l="__l" uI="0c477e4f-8" uS="{{['d']}}">{{o}}</tag>
+        <tag bind:__l="__l" uI="0c477e4f-9" uS="{{['d']}}">{{p}}</tag>
+    </view>
+    <view class="sm-info">
+        <label>作业代码：</label>
+        <text>{{q}}</text>
+        <view hoverClass="tap-hover" style="display:inline-block">
+            <iconfont bind:__l="__l" bindonClick="{{r}}" uI="0c477e4f-10" uP="{{s}}" wx:if="{{s}}"></iconfont>
+        </view>
+    </view>
+    <view class="sm-info">
+        <label>发布时间：</label>
+        <text>{{t}}</text>
+    </view>
+    <view class="sm-info">
+        <label>截止时间：</label>
+        <text>{{v}}</text>
+    </view>
+    <view class="sm-info weeks" wx:if="{{w}}">
+        <label>打卡时间：</label>
+        <tag bind:__l="__l" uI="{{wk.c}}" uP="{{y}}" uS="{{['d']}}" wx:for="{{x}}" wx:for-item="wk" wx:key="b">{{wk.a}}</tag>
+    </view>
+    <view class="sm-info" wx:if="{{z}}">
+        <label>作业要求：</label>
+        <text>{{A}}</text>
+    </view>
+</view>
+<view class="panel-box student-list" wx:if="{{B}}">
+    <view class="title">
+        <view>学生（员）列表</view>
+        <text>{{C}}/{{D}}</text>
+    </view>
+    <list-viewer bind:__l="__l" class="list" uI="0c477e4f-12" uP="{{F}}" uS="{{['d']}}" wx:if="{{F}}">
+        <view class="student-item" wx:for="{{E}}" wx:key="g">
+            <view class="number">{{item.a}}</view>
+            <view class="content">
+                <view>{{item.b}}</view>
+                <text class="summary" wx:if="{{item.c}}">{{item.d}}</text>
+                <text class="summary" wx:else> 未加入 </text>
+            </view>
+            <view bindtap="{{item.f}}" class="{{['removed',item.e&&'disabled']}}" hoverClass="tap-hover"> 移除 </view>
+        </view>
+    </list-viewer>
+</view>
+<view style="height:2rpx"></view>
+<view class="actions" wx:if="{{G}}">
+    <navigator class="warning" url="{{H}}">编辑</navigator>
+    <navigator class="warning" url="{{I}}">复制作业</navigator>
+    <navigator class="primary" url="{{J}}">作业列表</navigator>
+    <button class="blue" openType="share">分享</button>
+</view>
+<tui-modal bind:__l="__l" bindcancel="{{L}}" bindclick="{{K}}" uI="0c477e4f-13" uP="{{M}}" wx:if="{{M}}"></tui-modal>

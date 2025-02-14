@@ -1,0 +1,1 @@
+{"navigationBarTitleText":"赛事活动排行榜","enablePullDownRefresh":true,"usingComponents":{"iconfont":"../../../node-modules/yunzhi.uni-app/components/iconfont","tui-picker":"../../../node-modules/yunzhi.uni-app/thorui/tui-picker/tui-picker","avatar":"../../../components/avatar","list-viewer":"../../../node-modules/yunzhi.uni-app/components/list-viewer"}}

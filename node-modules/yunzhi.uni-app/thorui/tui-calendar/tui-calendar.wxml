@@ -1,0 +1,78 @@
+<view catchtouchmove="{{H}}" class="data-v-a590ce55" wx:if="{{a}}">
+    <view class="{{['tui-bottom-popup','data-v-a590ce55',E&&'tui-popup-show']}}">
+        <view class="{{['tui-calendar-header','data-v-a590ce55',d&&'tui-calendar-radius']}}">
+            <view class="data-v-a590ce55">{{b}}</view>
+            <view bindtap="{{c}}" class="tui-iconfont tui-font-close data-v-a590ce55" hoverClass="tui-opacity" hoverStayTime="{{150}}"></view>
+        </view>
+        <view class="tui-date-box data-v-a590ce55">
+            <view bindtap="{{g}}" class="tui-iconfont tui-font-arrowleft data-v-a590ce55" hoverClass="tui-opacity" hoverStayTime="{{150}}" style="{{'color:'+f}}" wx:if="{{e}}"></view>
+            <view bindtap="{{i}}" class="tui-iconfont tui-font-arrowleft data-v-a590ce55" hoverClass="tui-opacity" hoverStayTime="{{150}}" style="{{'color:'+h}}"></view>
+            <view class="tui-date_time data-v-a590ce55">{{j}}</view>
+            <view bindtap="{{l}}" class="tui-iconfont tui-font-arrowright data-v-a590ce55" hoverClass="tui-opacity" hoverStayTime="{{150}}" style="{{'color:'+k}}"></view>
+            <view bindtap="{{o}}" class="tui-iconfont tui-font-arrowright data-v-a590ce55" hoverClass="tui-opacity" hoverStayTime="{{150}}" style="{{'color:'+n}}" wx:if="{{m}}"></view>
+        </view>
+        <view class="tui-date-header data-v-a590ce55">
+            <view class="tui-date data-v-a590ce55">日</view>
+            <view class="tui-date data-v-a590ce55">一</view>
+            <view class="tui-date data-v-a590ce55">二</view>
+            <view class="tui-date data-v-a590ce55">三</view>
+            <view class="tui-date data-v-a590ce55">四</view>
+            <view class="tui-date data-v-a590ce55">五</view>
+            <view class="tui-date data-v-a590ce55">六</view>
+        </view>
+        <view class="{{['tui-date-content','data-v-a590ce55',v&&'tui-flex-start']}}" style="{{'height:'+w}}">
+            <view class="tui-date data-v-a590ce55" wx:for="{{p}}" wx:key="a"></view>
+            <view bindtap="{{item.t}}" class="{{['tui-date','data-v-a590ce55',r&&'tui-date-pd_0',item.o&&'tui-opacity',item.p&&'tui-start-date',item.q&&'tui-end-date']}}" style="{{'background-color:'+item.r+';'+'height:'+s}}" wx:for="{{q}}" wx:key="s">
+                <view class="tui-date-text data-v-a590ce55" style="{{'color:'+item.g+';'+'background-color:'+item.h}}">
+                    <view class="data-v-a590ce55" wx:if="{{item.a}}">{{item.b}}</view>
+                    <view class="{{['tui-custom-desc','data-v-a590ce55',item.e&&'tui-lunar-unshow']}}" wx:if="{{item.c}}">{{item.d}}</view>
+                    <text class="tui-iconfont tui-font-check data-v-a590ce55" wx:if="{{item.f}}"></text>
+                </view>
+                <view class="tui-date-desc data-v-a590ce55" style="{{'color:'+item.k}}" wx:if="{{item.i}}">{{item.j}}</view>
+                <view class="tui-date-desc data-v-a590ce55" style="{{'color:'+item.n}}" wx:if="{{item.l}}">{{item.m}}</view>
+            </view>
+            <view class="tui-bg-month data-v-a590ce55">{{t}}</view>
+        </view>
+        <view class="tui-calendar-op data-v-a590ce55">
+            <view class="tui-calendar-result data-v-a590ce55">
+                <text class="data-v-a590ce55">{{x}}</text>
+                <text class="data-v-a590ce55" wx:if="{{y}}">至{{z}}</text>
+            </view>
+            <view class="tui-calendar-btn_box data-v-a590ce55">
+                <view catchtap="{{B}}" class="{{['tui-btn__confirm','data-v-a590ce55',C&&'tui-btn__disabled',D&&'tui-btn__confirm-hover']}}" style="{{'background:'+A}}">确定</view>
+            </view>
+        </view>
+    </view>
+    <view bindtap="{{G}}" class="{{['tui-popup-mask','data-v-a590ce55',F]}}"></view>
+</view>
+<view class="data-v-a590ce55" wx:else>
+    <view class="tui-date-box data-v-a590ce55">
+        <view bindtap="{{K}}" class="tui-iconfont tui-font-arrowleft data-v-a590ce55" hoverClass="tui-opacity" hoverStayTime="{{150}}" style="{{'color:'+J}}" wx:if="{{I}}"></view>
+        <view bindtap="{{M}}" class="tui-iconfont tui-font-arrowleft data-v-a590ce55" hoverClass="tui-opacity" hoverStayTime="{{150}}" style="{{'color:'+L}}"></view>
+        <view class="tui-date_time data-v-a590ce55">{{N}}</view>
+        <view bindtap="{{P}}" class="tui-iconfont tui-font-arrowright data-v-a590ce55" hoverClass="tui-opacity" hoverStayTime="{{150}}" style="{{'color:'+O}}"></view>
+        <view bindtap="{{S}}" class="tui-iconfont tui-font-arrowright data-v-a590ce55" hoverClass="tui-opacity" hoverStayTime="{{150}}" style="{{'color:'+R}}" wx:if="{{Q}}"></view>
+    </view>
+    <view class="tui-date-header data-v-a590ce55">
+        <view class="tui-date data-v-a590ce55">日</view>
+        <view class="tui-date data-v-a590ce55">一</view>
+        <view class="tui-date data-v-a590ce55">二</view>
+        <view class="tui-date data-v-a590ce55">三</view>
+        <view class="tui-date data-v-a590ce55">四</view>
+        <view class="tui-date data-v-a590ce55">五</view>
+        <view class="tui-date data-v-a590ce55">六</view>
+    </view>
+    <view class="tui-date-content data-v-a590ce55" style="{{'height:'+Y}}">
+        <view class="tui-date data-v-a590ce55" wx:for="{{T}}" wx:key="a"></view>
+        <view bindtap="{{item.t}}" class="{{['tui-date','data-v-a590ce55',V&&'tui-date-pd_0',item.o&&'tui-opacity',item.p&&'tui-start-date',item.q&&'tui-end-date']}}" style="{{'background-color:'+item.r+';'+'height:'+W}}" wx:for="{{U}}" wx:key="s">
+            <view class="tui-date-text data-v-a590ce55" style="{{'color:'+item.g+';'+'background-color:'+item.h}}">
+                <view class="data-v-a590ce55" wx:if="{{item.a}}">{{item.b}}</view>
+                <view class="{{['tui-custom-desc','data-v-a590ce55',item.e&&'tui-lunar-unshow']}}" wx:if="{{item.c}}">{{item.d}}</view>
+                <text class="tui-iconfont tui-font-check data-v-a590ce55" wx:if="{{item.f}}"></text>
+            </view>
+            <view class="tui-date-desc data-v-a590ce55" style="{{'color:'+item.k}}" wx:if="{{item.i}}">{{item.j}}</view>
+            <view class="tui-date-desc data-v-a590ce55" style="{{'color:'+item.n}}" wx:if="{{item.l}}">{{item.m}}</view>
+        </view>
+        <view class="tui-bg-month data-v-a590ce55">{{X}}</view>
+    </view>
+</view>

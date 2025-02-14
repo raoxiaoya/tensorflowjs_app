@@ -1,0 +1,5 @@
+<view class="tui-nomore-class tui-loadmore-none data-v-e8e4cabc">
+    <view class="{{['data-v-e8e4cabc',d]}}">
+        <view class="{{['data-v-e8e4cabc',c]}}" style="{{'background-color:'+b}}">{{a}}</view>
+    </view>
+</view>

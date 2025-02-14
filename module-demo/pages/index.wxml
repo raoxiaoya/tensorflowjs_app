@@ -1,0 +1,34 @@
+<view class="container">
+    <view class="title">
+        <image src="{{a}}"></image>
+        <text>云智「AI运动识别插件」演示</text>
+    </view>
+    <view class="box">
+        <label>插件版本：</label>
+        <view class="row">
+            <view class="button-item active"> v{{b}}</view>
+        </view>
+        <label> 识别引擎： </label>
+        <view class="row">
+            <view bindtap="{{d}}" class="{{['button-item',c&&'active']}}" hoverClass="tap-hover"> 自动 </view>
+            <view bindtap="{{f}}" class="{{['button-item',e&&'active']}}" hoverClass="tap-hover">ve1 </view>
+            <view bindtap="{{h}}" class="{{['button-item',g&&'active']}}" hoverClass="tap-hover">ve2 </view>
+            <iconfont bind:__l="__l" bindonClick="{{i}}" uI="03f8ae10-0" uP="{{j}}" wx:if="{{j}}"></iconfont>
+        </view>
+        <view class="row">
+            <view bindtap="{{l}}" class="{{['button-item',k&&'active']}}" hoverClass="tap-hover"> 增强模式 </view>
+            <iconfont bind:__l="__l" bindonClick="{{m}}" uI="03f8ae10-1" uP="{{n}}" wx:if="{{n}}"></iconfont>
+        </view>
+        <label> 参数设定： </label>
+        <view class="row">
+            <input bindblur="{{o}}" bindinput="{{q}}" placeholder="人体检测阈值，0-1之间" type="digit" value="{{p}}"></input>
+            <iconfont bind:__l="__l" bindonClick="{{r}}" uI="03f8ae10-2" uP="{{s}}" wx:if="{{s}}"></iconfont>
+        </view>
+        <label> 运动选择： </label>
+        <view class="row">
+            <view bindtap="{{sp.d}}" class="{{['button-item',sp.b&&'active']}}" hoverClass="hover" wx:for="{{t}}" wx:for-item="sp" wx:key="c">{{sp.a}}</view>
+        </view>
+        <button bindtap="{{v}}" class="button primary" hoverClass="hover"> 运动锻炼 </button>
+        <button bindtap="{{w}}" class="button success" hoverClass="hover"> 人体检测 </button>
+    </view>
+</view>

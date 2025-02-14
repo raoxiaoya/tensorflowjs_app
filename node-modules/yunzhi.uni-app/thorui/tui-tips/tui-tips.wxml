@@ -1,0 +1,4 @@
+<view class="{{['tui-tips-class','tui-toptips','data-v-ea86b32e',f]}}" style="{{'background-color:'+c+';'+'color:'+d+';'+'font-size:'+e}}" wx:if="{{a}}">{{b}}</view>
+<view class="{{['tui-tips-class','tui-toast','data-v-ea86b32e',k,l]}}" wx:else>
+    <view class="tui-tips-content data-v-ea86b32e" style="{{'background-color:'+h+';'+'color:'+i+';'+'font-size:'+j}}">{{g}}</view>
+</view>

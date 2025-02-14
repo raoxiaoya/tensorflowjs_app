@@ -1,0 +1,1 @@
+<tui-footer bind:__l="__l" uI="189cf1a6-0" uP="{{a}}" wx:if="{{a}}"></tui-footer>

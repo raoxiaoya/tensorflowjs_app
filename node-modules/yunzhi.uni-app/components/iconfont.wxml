@@ -1,0 +1,1 @@
+<text bindtap="{{c}}" class="{{['iconfont','iconfont-class',a]}}" style="{{'font-size:'+b}}"></text>

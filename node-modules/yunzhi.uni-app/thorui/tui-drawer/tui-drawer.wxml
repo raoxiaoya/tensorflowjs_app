@@ -1,0 +1,6 @@
+<view class="data-v-3751615e">
+    <view bindtap="{{d}}" class="{{['tui-drawer-mask','data-v-3751615e',b&&'tui-drawer-mask_show']}}" style="{{'z-index:'+c}}" wx:if="{{a}}"></view>
+    <view class="{{['tui-drawer-container','data-v-3751615e',e,f]}}" style="{{'z-index:'+g+';'+'background-color:'+h}}">
+        <slot></slot>
+    </view>
+</view>

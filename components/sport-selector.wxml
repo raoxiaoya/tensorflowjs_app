@@ -1,0 +1,24 @@
+<view class="sport-selector">
+    <scroll-view scrollX class="scroll" wx:if="{{a}}">
+        <view bindtap="{{sp.g}}" class="item" hoverClass="tap-hover" wx:for="{{b}}" wx:for-item="sp" wx:key="f">
+            <view class="name">
+                <text>{{sp.a}}</text>
+            </view>
+            <image mode="aspectFit" src="{{sp.b}}"></image>
+            <view class="selector">
+                <tui-checkbox bind:__l="__l" bindchange="{{sp.c}}" uI="{{sp.d}}" uP="{{sp.e}}" wx:if="{{sp.e}}"></tui-checkbox>
+            </view>
+        </view>
+    </scroll-view>
+    <view class="list" wx:else>
+        <view bindtap="{{sp.h}}" class="{{['item',sp.g&&'odd']}}" hoverClass="tap-hover" wx:for="{{c}}" wx:for-item="sp" wx:key="f">
+            <view class="name">
+                <text>{{sp.a}}</text>
+            </view>
+            <image mode="aspectFit" src="{{sp.b}}"></image>
+            <view class="selector">
+                <tui-checkbox bind:__l="__l" bindchange="{{sp.c}}" uI="{{sp.d}}" uP="{{sp.e}}" wx:if="{{sp.e}}"></tui-checkbox>
+            </view>
+        </view>
+    </view>
+</view>

@@ -1,0 +1,16 @@
+<view catchtouchmove="{{B}}" class="{{['tui-modal__container','data-v-6c47dbea',z]}}" style="{{'z-index:'+A}}">
+    <view class="{{['tui-modal-box','data-v-6c47dbea',r,s]}}" style="{{'width:'+m+';'+'padding:'+n+';'+'border-radius:'+o+';'+'background-color:'+p+';'+'z-index:'+q}}">
+        <view class="data-v-6c47dbea" wx:if="{{a}}">
+            <view class="tui-modal-title data-v-6c47dbea" wx:if="{{b}}">{{c}}</view>
+            <view class="{{['tui-modal-content','data-v-6c47dbea',e]}}" style="{{'color:'+f+';'+'font-size:'+g}}">{{d}}</view>
+            <view class="{{['tui-modalBtn-box','data-v-6c47dbea',l]}}">
+                <view bindtap="{{item.h}}" class="{{['tui-modal-btn','data-v-6c47dbea',i,j,k]}}" style="{{'background:'+item.f+';'+'color:'+item.g}}" wx:for="{{h}}" wx:key="e">{{item.a}} <view class="{{['tui-modal__border','data-v-6c47dbea',item.c]}}" style="{{'border-color:'+item.d}}" wx:if="{{item.b}}"></view>
+                </view>
+            </view>
+        </view>
+        <view class="data-v-6c47dbea" wx:else>
+            <slot></slot>
+        </view>
+    </view>
+    <view bindtap="{{y}}" class="{{['tui-modal-mask','data-v-6c47dbea',v]}}" style="{{'z-index:'+w+';'+'background:'+x}}" wx:if="{{t}}"></view>
+</view>

@@ -1,0 +1,36 @@
+<view class="container">
+    <view class="content">
+        <view class="title">用户注册</view>
+        <view class="form-panel">
+            <view class="form-row">
+                <iconfont bind:__l="__l" uI="6f017e0e-0" uP="{{a}}" wx:if="{{a}}"></iconfont>
+                <view class="input-wrapper">
+                    <view class="wrapper">
+                        <input disabled bindinput="{{c}}" maxlength="11" placeholder="点击右侧按钮获取手机号" placeholderClass="placeholder" value="{{b}}"></input>
+                        <view class="append">
+                            <button bindgetphonenumber="{{d}}" class="wx-get-mobile" openType="getPhoneNumber" size="mini">获取手机号</button>
+                        </view>
+                    </view>
+                    <view class="messager" wx:if="{{e}}">{{f}}</view>
+                </view>
+            </view>
+            <view class="form-row">
+                <iconfont bind:__l="__l" uI="6f017e0e-1" uP="{{g}}" wx:if="{{g}}"></iconfont>
+                <view class="input-wrapper">
+                    <view class="wrapper">
+                        <input bindinput="{{j}}" maxlength="20" placeholder="请输入登录密码" placeholderClass="placeholder" type="text" value="{{i}}" wx:if="{{h}}"></input>
+                        <input bindinput="{{l}}" maxlength="20" password="true" placeholder="请输入登录密码" placeholderClass="placeholder" type="password" value="{{k}}" wx:else></input>
+                        <view class="append">
+                            <iconfont bind:__l="__l" bindonClick="{{n}}" uI="6f017e0e-2" uP="{{o}}" wx:if="{{m}}"></iconfont>
+                            <iconfont bind:__l="__l" bindonClick="{{p}}" uI="6f017e0e-3" uP="{{q||''}}" wx:else></iconfont>
+                        </view>
+                    </view>
+                    <view class="messager" wx:if="{{r}}">{{s}}</view>
+                </view>
+            </view>
+            <button bindtap="{{t}}" class="button primary"> 注册 </button>
+            <navigator class="guide-link" openType="redirect" url="./login"> 已有账户，登录 </navigator>
+        </view>
+    </view>
+    <copyright bind:__l="__l" uI="6f017e0e-4"></copyright>
+</view>
